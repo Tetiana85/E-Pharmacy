@@ -1,4 +1,4 @@
-import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-783777d1.js";import{u}from"./index-ad4be6dc.js";const z=i.ul`
+import{s as i,u as y,j as e,N as l,a as v,r as h,b as o,g as S,c as z,d as M}from"./index-251363dc.js";import{e as N}from"./elements-2a1dc22d.js";import{u as j}from"./index-910fdf74.js";const k=i.ul`
   display: flex;
   gap: 28px;
   width: 1019px;
@@ -12,7 +12,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     width: 335px;
     flex-direction: column;
   }
-`,l=i.li`
+`,g=i.li`
   border: 1.15px solid #f1f1f1;
   border-radius: 27px;
   padding: 14px 18px;
@@ -27,7 +27,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     height: 126px;
     justify-content: space-between;
   }
-`,g=i.div`
+`,m=i.div`
   display: flex;
   gap: 14px;
   align-items: center;
@@ -52,7 +52,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     width: 54px;
     height: 54px;
   }
-`,m=i.div`
+`,w=i.div`
   display: flex;
   gap: 28px;
   align-items: center;
@@ -63,19 +63,19 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   @media screen and (max-width: 767px) {
     font-size: 24px;
   }
-`,w=i.p`
+`,u=i.p`
   font-weight: 400;
   font-size: 13px;
   line-height: 140%;
   color: #93939a;
-`,M=()=>e.jsxs(z,{children:[e.jsxs(l,{children:[e.jsxs(g,{children:[e.jsx(f,{children:"1"}),e.jsx("p",{children:"Huge Sale"})]}),e.jsxs(m,{children:[e.jsx("p",{children:"70%"}),e.jsx(w,{children:"Shop now"})]})]}),e.jsxs(l,{children:[e.jsxs(g,{children:[e.jsx(f,{children:"2"}),e.jsx("p",{children:"Secure delivery"})]}),e.jsxs(m,{children:[e.jsx("p",{children:"100%"}),e.jsx(w,{children:"Read more"})]})]}),e.jsxs(l,{children:[e.jsxs(g,{children:[e.jsx(f,{children:"3"}),e.jsx("p",{children:"Off"})]}),e.jsxs(m,{children:[e.jsx("p",{children:"35%"}),e.jsx(w,{children:"Shop now"})]})]})]}),k=i.main`
+`,R=()=>{const n=y();return e.jsxs(k,{children:[e.jsxs(g,{children:[e.jsxs(m,{children:[e.jsx(f,{children:"1"}),e.jsx("p",{children:"Huge Sale"})]}),e.jsxs(w,{children:[e.jsx("p",{children:"70%"}),e.jsx(l,{to:"/medicine",state:{from:n.pathname},children:e.jsx(u,{children:"Shop now"})})]})]}),e.jsxs(g,{children:[e.jsxs(m,{children:[e.jsx(f,{children:"2"}),e.jsx("p",{children:"Secure delivery"})]}),e.jsxs(w,{children:[e.jsx("p",{children:"100%"}),e.jsx(l,{to:"/medicine",state:{from:n.pathname},children:e.jsx(u,{children:"Read more"})})]})]}),e.jsxs(g,{children:[e.jsxs(m,{children:[e.jsx(f,{children:"3"}),e.jsx("p",{children:"Off"})]}),e.jsxs(w,{children:[e.jsx("p",{children:"35%"}),e.jsx(l,{to:"/medicine",state:{from:n.pathname},children:e.jsx(u,{children:"Shop now"})})]})]})]})},A=i.main`
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   top: -104px;
-`,N=i.div`
+`,H=i.div`
   width: 100%;
   height: 800px;
   background: #59b17a;
@@ -88,7 +88,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   @media screen and (max-width: 767px) {
     height: 812px;
   }
-`,R=i.p`
+`,I=i.p`
   width: 609px;
   font-weight: 600;
   font-size: 74px;
@@ -102,7 +102,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     width: 331px;
     font-size: 50px;
   }
-`,A=i.img`
+`,$=i.img`
   position: absolute;
   bottom: -146px;
   right: -76px;
@@ -111,7 +111,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     right: -61px;
     width: 451px;
   }
-`,H=i.p`
+`,D=i.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -126,7 +126,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     left: 147px;
     width: 156px;
   }
-`,$=i.h2`
+`,T=i.h2`
   font-weight: 600;
   font-size: 40px;
   line-height: 120%;
@@ -134,28 +134,28 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   color: #1d1e21;
   margin: 0;
   margin-bottom: 14px;
-`,D=i.p`
+`,E=i.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   text-align: center;
   color: #93939a;
   margin-bottom: 64px;
-`,I=i.p`
+`,L=i.p`
   font-weight: 600;
   font-size: 40px;
   line-height: 120%;
   text-align: center;
   color: #1d1e21;
   margin-bottom: 14px;
-`,T=i.p`
+`,q=i.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   text-align: center;
   color: #93939a;
   margin-bottom: 88px;
-`,E=i.ul`
+`,C=i.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 36px;
@@ -170,7 +170,8 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   @media screen and (max-width: 767px) {
     width: 335px;
   }
-`,q=i.li`
+`,F=i.li`
+  position: relative;
   border: 1.15px solid #f1f1f1;
   border-radius: 27px;
   padding: 40px;
@@ -185,7 +186,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     width: 335px;
     height: 202px;
   }
-`,C=i.div`
+`,P=i.div`
   display: flex;
   justify-content: space-between;
   font-weight: 600;
@@ -198,16 +199,16 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     margin-bottom: 32px;
     align-items: flex-start;
   }
-`,F=i.p`
+`,U=i.p`
   width: 150px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-`,L=i.div`
+`,B=i.div`
   display: flex;
   gap: 14px;
   align-items: center;
-`,U=i.div`
+`,O=i.div`
   border-radius: 8px;
   width: 65px;
   height: 34px;
@@ -221,7 +222,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   display: flex;
   align-items: center;
   justify-content: center;
-`,B=i.div`
+`,Y=i.div`
   border-radius: 8px;
   width: 65px;
   height: 34px;
@@ -235,16 +236,16 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   display: flex;
   align-items: center;
   justify-content: center;
-`,O=i.div`
+`,G=i.div`
   display: flex;
   gap: 6px;
   align-items: center;
-`,Y=i.p`
+`,_=i.p`
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
   color: #1d1e21;
-`,G=i.div`
+`,Q=i.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -252,15 +253,15 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   font-size: 16px;
   line-height: 125%;
   color: #93939a;
-`,j=i.div`
+`,b=i.div`
   display: flex;
   gap: 8px;
-`,P=i.p`
+`,J=i.p`
   width: 120px;
   @media screen and (max-width: 767px) {
     width: 100%;
   }
-`,_=()=>{const o=b(),[n,c]=h.useState([]),p=u({query:"(min-width: 768px) and (max-width: 1280px)"});h.useEffect(()=>{(async()=>{const d=await o(v());d.meta.requestStatus==="fulfilled"&&c(d.payload)})()},[o]);const r=p?n.slice(0,6):n;return e.jsx(E,{children:r==null?void 0:r.map(t=>e.jsxs(q,{children:[e.jsxs(C,{children:[e.jsx(F,{children:t.name}),e.jsxs(L,{children:[e.jsxs(O,{children:[e.jsx("svg",{width:"16",height:"16",children:e.jsx("use",{href:`${s}#starY`})}),e.jsx(Y,{children:t.rating})]}),t.status==="open"?e.jsx(U,{children:"open"}):e.jsx(B,{children:"close"})]})]}),e.jsxs(G,{children:[e.jsxs(j,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${s}#map-pin`})}),e.jsx(P,{children:t.address})]}),e.jsxs(j,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${s}#phone`})}),e.jsx("p",{children:t.phone})]})]})]},t._id))})},Q="/assets/add-mob-dc38c086.png",J="/assets/Add-88b3c7fe.png",K=i.div`
+`,K=()=>{const n=v(),[s,c]=h.useState([]),p=j({query:"(min-width: 768px) and (max-width: 1280px)"});h.useEffect(()=>{(async()=>{const d=await n(S());d.meta.requestStatus==="fulfilled"&&c(d.payload)})()},[n]);const r=p?s.slice(0,6):s;return e.jsx(C,{children:r==null?void 0:r.map(t=>e.jsxs(F,{children:[e.jsxs(P,{children:[e.jsx(U,{children:t.name}),e.jsxs(B,{children:[e.jsxs(G,{children:[e.jsx("svg",{width:"16",height:"16",children:e.jsx("use",{href:`${o}#starY`})}),e.jsx(_,{children:t.rating})]}),t.status==="open"?e.jsx(O,{children:"open"}):e.jsx(Y,{children:"close"})]})]}),e.jsxs(Q,{children:[e.jsxs(b,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${o}#map-pin`})}),e.jsx(J,{children:t.address})]}),e.jsxs(b,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${o}#phone`})}),e.jsx("p",{children:t.phone})]})]}),e.jsx("img",{src:N,alt:"elements",style:{position:"absolute",bottom:"18px",right:"18px",width:"90px",height:"90px",borderRadius:"18px",transform:"scale(1.4)"}})]},t._id))})},V="/E-Pharmacy/assets/add-mob-dc38c086.png",W="/E-Pharmacy/assets/Add-88b3c7fe.png",X=i.div`
   border-radius: 32px;
   padding: 40px 40px 40px 80px;
   width: 1248px;
@@ -284,12 +285,12 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     flex-direction: column;
     gap: 39px;
   }
-`,V=i.div`
+`,Z=i.div`
   width: 488px;
   @media screen and (max-width: 767px) {
     width: 100%;
   }
-`,W=i.p`
+`,ee=i.p`
   font-weight: 600;
   font-size: 48px;
   line-height: 115%;
@@ -300,7 +301,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     font-size: 28px;
     line-height: 114%;
   }
-`,X=i.p`
+`,ie=i.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -310,7 +311,7 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     font-size: 14px;
     line-height: 129%;
   }
-`,Z=i.button`
+`,te=i.button`
   border: 1px solid rgba(241, 241, 241, 0.5);
   border-radius: 60px;
   padding: 13px 50px;
@@ -326,16 +327,16 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   &:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-`,ee=i.div`
+`,ne=i.div`
   width: 608px;
   height: 406px;
-  background-image: url(${J});
+  background-image: url(${W});
   @media screen and (max-width: 767px) {
     width: 295px;
     height: 335px;
-    background-image: url(${Q});
+    background-image: url(${V});
   }
-`,ie=()=>{const o=y(),n=()=>{o("/medicine-store")};return e.jsxs(K,{children:[e.jsxs(V,{children:[e.jsx(W,{children:"Add the medicines you need online now"}),e.jsx(X,{children:"Enjoy the convenience of having your prescriptions filled from home by connecting with your community pharmacy through our online platform."}),e.jsx(Z,{onClick:n,children:"Buy medicine"})]}),e.jsx(ee,{})]})},te=i.ul`
+`,se=()=>{const n=z(),s=()=>{n("/medicine-store")};return e.jsxs(X,{children:[e.jsxs(Z,{children:[e.jsx(ee,{children:"Add the medicines you need online now"}),e.jsx(ie,{children:"Enjoy the convenience of having your prescriptions filled from home by connecting with your community pharmacy through our online platform."}),e.jsx(te,{onClick:s,children:"Buy medicine"})]}),e.jsx(ne,{})]})},oe=i.ul`
   display: flex;
   gap: 48px;
   font-weight: 600;
@@ -354,13 +355,13 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     flex-wrap: wrap;
     justify-content: center;
   }
-`,a=i.div`
+`,x=i.div`
   display: flex;
   gap: 8px;
-`,ne=()=>e.jsxs(te,{children:[e.jsxs(a,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Take user orders form online"})]}),e.jsxs(a,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Create your shop profile"})]}),e.jsxs(a,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Manage your store"})]}),e.jsxs(a,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Get more orders"})]}),e.jsxs(a,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Storage shed"})]})]}),se=i.ul`
+`,re=()=>e.jsxs(oe,{children:[e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${o}#lightning`})}),e.jsx("p",{children:"Take user orders form online"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${o}#lightning`})}),e.jsx("p",{children:"Create your shop profile"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${o}#lightning`})}),e.jsx("p",{children:"Manage your store"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${o}#lightning`})}),e.jsx("p",{children:"Get more orders"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${o}#lightning`})}),e.jsx("p",{children:"Storage shed"})]})]}),de=i.ul`
   display: flex;
   gap: 28px;
-`,oe=i.li`
+`,ae=i.li`
   border: 1px solid #f1f1f1;
   border-radius: 27px;
   /* padding: 0px 28px 40px 28px; */
@@ -384,13 +385,13 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
     padding: 54px 0px 0px 0px;
     width: 335px;
   }
-`,re=i.p`
+`,xe=i.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   text-align: center;
   color: #93939a;
-`,de=i.div`
+`,he=i.div`
   border-radius: 100%;
   width: 72px;
   height: 72px;
@@ -398,8 +399,8 @@ import{s as i,j as e,u as b,r as h,a as s,g as v,b as y,c as S}from"./index-7837
   position: absolute;
   top: -33px;
   overflow: hidden;
-`,xe=i.img`
+`,pe=i.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`,ae=()=>{const o=b(),[n,c]=h.useState([]),p=u({query:"(max-width: 767px)"}),r=u({query:"(min-width: 768px) and (max-width: 1280px)"});return h.useEffect(()=>{(async()=>{const d=await o(S());if(d.meta.requestStatus==="fulfilled"){let x=d.payload;p?x=x.slice(0,1):r&&(x=x.slice(0,2)),c(x)}})()},[o,p,r]),e.jsx(se,{children:n==null?void 0:n.map(t=>e.jsxs(oe,{children:[e.jsx(de,{children:e.jsx(xe,{src:t.url,alt:t.name})}),e.jsx("p",{children:t.name}),e.jsx(re,{children:t.testimonial})]},t._id))})},he="/assets/IMG-c15dab5e.png",le=()=>(h.useEffect(()=>{window.scrollTo(0,0)},[]),e.jsxs(k,{children:[e.jsx(N,{children:e.jsxs("div",{style:{position:"relative"},children:[e.jsx(A,{src:he,alt:"Pills"}),e.jsx(R,{children:"Your medication delivered"}),e.jsx(H,{children:"Say goodbye to all your healthcare worries with us"})]})}),e.jsx(M,{}),e.jsx($,{children:"Your Nearest Medicine Store"}),e.jsx(D,{children:"Search for Medicine, Filter by your location"}),e.jsx(_,{}),e.jsx(ie,{}),e.jsx(ne,{}),e.jsx(I,{children:"Reviews"}),e.jsx(T,{children:"Search for Medicine, Filter by your location"}),e.jsx(ae,{})]}));export{le as default};
+`,ce=()=>{const n=v(),[s,c]=h.useState([]),p=j({query:"(max-width: 767px)"}),r=j({query:"(min-width: 768px) and (max-width: 1280px)"});return h.useEffect(()=>{(async()=>{const d=await n(M());if(d.meta.requestStatus==="fulfilled"){let a=d.payload;p?a=a.slice(0,1):r&&(a=a.slice(0,2)),c(a)}})()},[n,p,r]),e.jsx(de,{children:s==null?void 0:s.map(t=>e.jsxs(ae,{children:[e.jsx(he,{children:e.jsx(pe,{src:t.url,alt:t.name})}),e.jsx("p",{children:t.name}),e.jsx(xe,{children:t.testimonial})]},t._id))})},le="/E-Pharmacy/assets/IMG-c15dab5e.png",we=()=>(h.useEffect(()=>{window.scrollTo(0,0)},[]),e.jsxs(A,{children:[e.jsx(H,{children:e.jsxs("div",{style:{position:"relative"},children:[e.jsx($,{src:le,alt:"Pills"}),e.jsx(I,{children:"Your medication delivered"}),e.jsx(D,{children:"Say goodbye to all your healthcare worries with us"})]})}),e.jsx(R,{}),e.jsx(T,{children:"Your Nearest Medicine Store"}),e.jsx(E,{children:"Search for Medicine, Filter by your location"}),e.jsx(K,{}),e.jsx(se,{}),e.jsx(re,{}),e.jsx(L,{children:"Reviews"}),e.jsx(q,{children:"Search for Medicine, Filter by your location"}),e.jsx(ce,{})]}));export{we as default};

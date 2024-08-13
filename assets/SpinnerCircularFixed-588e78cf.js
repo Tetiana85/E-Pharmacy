@@ -1,4 +1,4 @@
-import{s as r,R as p}from"./index-783777d1.js";const S=r.div`
+import{s as r,R as p}from"./index-251363dc.js";const S=r.div`
   width: 1223px;
   padding: 72px 20px;
   margin: auto;
@@ -29,6 +29,7 @@ import{s as r,R as p}from"./index-783777d1.js";const S=r.div`
     margin-bottom: 80px;
   }
 `,C=r.li`
+  position: relative;
   border: 1.15px solid #f1f1f1;
   border-radius: 27px;
   padding: 40px;
