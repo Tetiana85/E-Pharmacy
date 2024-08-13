@@ -10,7 +10,7 @@ import {
   HomeStores,
   HomeText,
 } from './Home.styled';
-import NearesrStore from '../../components/NearesrStore/NearesrStore';
+import NearesrStore from '../../components/NearestStore/NearestStore';
 import AddMedicine from '../../components/AddMedicine/AddMedicine';
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
 import Reviews from '../../components/Reviews/Reviews';

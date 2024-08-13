@@ -32,6 +32,7 @@ export const MedicineStoreUl = styled.ul`
   }
 `;
 export const MedicineStoreLi = styled.li`
+  position: relative;
   border: 1.15px solid #f1f1f1;
   border-radius: 27px;
   padding: 40px;

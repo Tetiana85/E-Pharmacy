@@ -186,8 +186,9 @@ const CartPage = () => {
                 You can pay us in a multiple way in our payment gateway system.
               </p>
               <CartRadioDiv role="group" aria-labelledby="paymentMethod">
-                <label>
+                <li className="CartRadioItem">
                   <input
+                    className="RadioButton"
                     type="radio"
                     name="paymentMethod"
                     value="Cash On Delivery"
@@ -196,9 +197,10 @@ const CartPage = () => {
                     checked={formik.values.paymentMethod === 'Cash On Delivery'}
                   />
                   <span>Cash On Delivery</span>
-                </label>
-                <label>
+                </li>
+                <li className="CartRadioItem">
                   <input
+                    className="RadioButton"
                     type="radio"
                     name="paymentMethod"
                     value="Bank"
@@ -207,7 +209,7 @@ const CartPage = () => {
                     checked={formik.values.paymentMethod === 'Bank'}
                   />
                   <span>Bank</span>
-                </label>
+                </li>
               </CartRadioDiv>
               {formik.touched.paymentMethod && formik.errors.paymentMethod ? (
                 <CartErrorRadio>{formik.errors.paymentMethod}</CartErrorRadio>

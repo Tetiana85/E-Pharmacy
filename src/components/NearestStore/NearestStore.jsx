@@ -11,14 +11,15 @@ import {
   OpenDiv,
   StarDiv,
   StarNumber,
-} from './NearesrStore.styled';
+} from './NearestStore.styled';
 import sprite from '../../img/sprite.svg';
+import elementsImg from '../../img/elements.png';
 import { useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { getNearestStore } from '../../redux/operation';
 import { useMediaQuery } from 'react-responsive';
 
-const NearesrStore = () => {
+const NearestStore = () => {
   const dispatch = useDispatch();
   const [store, setStore] = useState([]);
   const isTablet = useMediaQuery({
@@ -35,7 +36,7 @@ const NearesrStore = () => {
   const displayedStore = isTablet ? store.slice(0, 6) : store;
   return (
     <NearestStoreUl>
-      {displayedStore?.map(item => (
+      {displayedStore?.map((item) => (
         <NearestStoreLi key={item._id}>
           <NearestStoreName>
             <Name>{item.name}</Name>
@@ -67,9 +68,22 @@ const NearesrStore = () => {
               <p>{item.phone}</p>
             </NearestStoreAdressSvg>
           </NearestStoreAdress>
+          <img
+            src={elementsImg}
+            alt="elements"
+            style={{
+              position: 'absolute',
+              bottom: '18px',
+              right: '18px',
+              width: '90px',
+              height: '90px',
+              borderRadius: '18px',
+              transform: 'scale(1.4)',
+            }}
+          />
         </NearestStoreLi>
       ))}
     </NearestStoreUl>
   );
 };
-export default NearesrStore;
+export default NearestStore;

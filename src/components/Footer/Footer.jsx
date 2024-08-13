@@ -22,10 +22,12 @@ const Footer = () => {
       <InnerFooterContainer>
         <TopFooterDiv>
           <div>
-            <FooterLogoDiv>
-              <img src={logo} alt="Logo"></img>
-              <p>E-Pharmacy</p>
-            </FooterLogoDiv>
+            <NavLink to="/home">
+              <FooterLogoDiv>
+                <img src={logo} alt="Logo"></img>
+                <p>E-Pharmacy</p>
+              </FooterLogoDiv>
+            </NavLink>
             <FooterText>
               Get the medicine to help you feel better, get back to your active
               life, and enjoy every moment.
@@ -91,4 +93,5 @@ const Footer = () => {
     </FooterContainer>
   );
 };
+
 export default Footer;

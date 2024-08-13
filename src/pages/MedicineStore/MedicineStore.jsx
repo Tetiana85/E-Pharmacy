@@ -17,6 +17,8 @@ import {
   VisiteButton,
 } from './MedicineStore.styled';
 import sprite from '../../img/sprite.svg';
+import elementsImg from '../../img/elements.png';
+import elementsImgTablet from '../../img/elements_tablet.png';
 import { useEffect, useState } from 'react';
 import { getStore } from '../../redux/operation';
 import { useDispatch, useSelector } from 'react-redux';
@@ -27,7 +29,7 @@ const MedicineStore = () => {
   const [store, setStore] = useState([]);
   const dispatch = useDispatch();
   const isTablet = useMediaQuery({
-    query: '(min-width: 768px) and (max-width: 1280px)',
+    query: '(min-width: 768px)',
   });
   const isLoading = useSelector((state) => state.isLoading);
 
@@ -100,6 +102,35 @@ const MedicineStore = () => {
                   )}
                 </StarDiv>
               </MedicineStoreVisiteDiv>
+              {isTablet ? (
+                <img
+                  src={elementsImgTablet}
+                  alt="elements"
+                  style={{
+                    position: 'absolute',
+                    top: '18px',
+                    right: '18px',
+                    width: '90px',
+                    height: '90px',
+                    borderRadius: '18px',
+                    transform: 'scale(1.4)',
+                  }}
+                />
+              ) : (
+                <img
+                  src={elementsImg}
+                  alt="elements"
+                  style={{
+                    position: 'absolute',
+                    bottom: '18px',
+                    right: '18px',
+                    width: '90px',
+                    height: '90px',
+                    borderRadius: '18px',
+                    transform: 'scale(1.4)',
+                  }}
+                />
+              )}
             </MedicineStoreLi>
           ))}
         </MedicineStoreUl>

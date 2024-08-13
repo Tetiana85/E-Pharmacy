@@ -98,17 +98,17 @@ export const CartFormButton = styled.button`
   padding: 13px 32px;
   width: 141px;
   height: 44px;
-  background: ${props => (props.disabled ? 'rgb(136, 178, 152)' : '#59b17a')};
+  background: ${(props) => (props.disabled ? 'rgb(136, 178, 152)' : '#59b17a')};
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
   color: #fff;
-  cursor: ${props => (props.disabled ? 'none' : 'pointer')};
+  cursor: ${(props) => (props.disabled ? 'none' : 'pointer')};
   transition: box-shadow 0.3s ease;
   &:hover,
   &:focus,
   &:active {
-    box-shadow: ${props =>
+    box-shadow: ${(props) =>
       props.disabled ? 'none' : ' 0 4px 8px rgba(0, 0, 0, 0.2);'};
   }
 `;
@@ -120,12 +120,72 @@ export const CartForHr = styled.hr`
     width: 100%;
   }
 `;
-export const CartRadioDiv = styled.div`
+export const CartRadioDiv = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+
+  span {
+    margin-left: 8px;
+  }
 `;
+
+export const CartRadioItem = styled.li`
+  position: relative;
+  display: flex;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #fcfcfc;
+  align-items: center;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+`;
+
+export const RadioButton = styled.input`
+  height: 12px;
+  width: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #59b17a;
+    border: 1px solid #d1d5db;
+  }
+
+  &:checked:before {
+    border-color: #fcfcfc;
+  }
+
+  &:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fcfcfc;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+  }
+`;
+
 export const CartError = styled.div`
   color: red;
   position: relative;

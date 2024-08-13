@@ -6,8 +6,11 @@ import {
   ShopNow,
   TopInformationDiv,
 } from './Information.styled';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Information = () => {
+  const location = useLocation();
+
   return (
     <InformationUl>
       <InformationLi>
@@ -17,7 +20,9 @@ const Information = () => {
         </TopInformationDiv>
         <BottomInformationDiv>
           <p>70%</p>
-          <ShopNow>Shop now</ShopNow>
+          <NavLink to="/medicine" state={{ from: location.pathname }}>
+            <ShopNow>Shop now</ShopNow>
+          </NavLink>
         </BottomInformationDiv>
       </InformationLi>
       <InformationLi>
@@ -27,7 +32,9 @@ const Information = () => {
         </TopInformationDiv>
         <BottomInformationDiv>
           <p>100%</p>
-          <ShopNow>Read more</ShopNow>
+          <NavLink to="/medicine" state={{ from: location.pathname }}>
+            <ShopNow>Read more</ShopNow>
+          </NavLink>
         </BottomInformationDiv>
       </InformationLi>
       <InformationLi>
@@ -37,7 +44,9 @@ const Information = () => {
         </TopInformationDiv>
         <BottomInformationDiv>
           <p>35%</p>
-          <ShopNow>Shop now</ShopNow>
+          <NavLink to="/medicine" state={{ from: location.pathname }}>
+            <ShopNow>Shop now</ShopNow>
+          </NavLink>
         </BottomInformationDiv>
       </InformationLi>
     </InformationUl>

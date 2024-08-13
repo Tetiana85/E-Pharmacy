@@ -3,7 +3,6 @@ import {
   Error,
   FonDiv,
   LogFieldDiv,
-  LogInSpan,
   LoginForm,
   RegisterButton,
   RegisterButtonDiv,
@@ -143,9 +142,8 @@ const Register = () => {
                 <RegisterButton type="submit" disabled={isSubmitting}>
                   Register
                 </RegisterButton>
-                <p>
-                  Already have an account?{' '}
-                  <LogInSpan onClick={toLogin}>Login</LogInSpan>
+                <p onClick={toLogin} style={{ cursor: 'pointer' }}>
+                  Already have an account?
                 </p>
               </RegisterButtonDiv>
             </RegisterForm>
@@ -186,9 +184,8 @@ const Register = () => {
                 <RegisterButton type="submit" disabled={isSubmitting}>
                   Login
                 </RegisterButton>
-                <p>
+                <p onClick={toRegistration} style={{ cursor: 'pointer' }}>
                   Don&apos;t have an account yet?
-                  <LogInSpan onClick={toRegistration}>Registration</LogInSpan>
                 </p>
               </RegisterButtonDiv>
             </LoginForm>

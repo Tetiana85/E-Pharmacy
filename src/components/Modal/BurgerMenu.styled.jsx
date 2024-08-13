@@ -13,9 +13,8 @@ export const ModalBackground = styled.div`
 
 export const ModalBurgerContainer = styled.div`
   background: #59b17a;
-  width: 40%;
   height: 100%;
-  margin: 0 0 0 60%;
+  margin: 0 0 0 49%;
   position: relative;
   padding: 20% 10%;
   display: flex;
@@ -23,6 +22,9 @@ export const ModalBurgerContainer = styled.div`
   align-items: center;
   z-index: 101;
   gap: 30%;
+  @media (min-width: 768px) {
+    margin: 0 0 0 57%;
+  }
 `;
 export const NavDivBurger = styled.nav`
   display: flex;

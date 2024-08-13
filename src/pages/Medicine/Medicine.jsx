@@ -295,7 +295,7 @@ const Medicine = () => {
       <MedicineUl>
         {isLoading ? (
           <SpinerDiv>
-            <SpinnerCircularFixed color="#59b17a" />
+            <SpinnerCircularFixed color="#59b17a"/>
           </SpinerDiv>
         ) : pruductArray.length === 0 ? (
           <div>Nothing was found for your request</div>

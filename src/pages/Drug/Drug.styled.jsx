@@ -89,6 +89,7 @@ export const DrugNameDiv = styled.div`
     gap: 54px;
   }
 `;
+
 export const DrugFirm = styled.p`
   font-weight: 400;
   font-size: 12px;
