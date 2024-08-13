@@ -44,7 +44,7 @@ const ModalReg = ({ close, openLog }) => {
   const dispatch = useDispatch();
 
   const handleKeyDown = useCallback(
-    e => {
+    (e) => {
       if (e.key === 'Escape') {
         close();
       }
@@ -57,12 +57,12 @@ const ModalReg = ({ close, openLog }) => {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [handleKeyDown]);
-  const handleBackgroundClick = event => {
+  const handleBackgroundClick = (event) => {
     if (event.target === event.currentTarget) {
       close();
     }
   };
-  const handleRegSubmit = async values => {
+  const handleRegSubmit = async (values) => {
     const res = await dispatch(registration(values));
 
     if (res.error?.message === 'Rejected') {
@@ -143,9 +143,8 @@ const ModalReg = ({ close, openLog }) => {
             </ModalLogForm>
           )}
         </Formik>
-        <p>
+        <p onClick={toOpenLoginModal} style={{ cursor: 'pointer' }}>
           Already have an account?
-          <ModalLogSpan onClick={toOpenLoginModal}>LogIn</ModalLogSpan>
         </p>
       </ModalRegContainer>
     </ModalBackground>

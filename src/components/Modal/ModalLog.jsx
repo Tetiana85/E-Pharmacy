@@ -111,9 +111,8 @@ const ModalLog = ({ close, openReg }) => {
             </ModalLogForm>
           )}
         </Formik>
-        <p>
+        <p onClick={toOpenRegisterModal} style={{ cursor: 'pointer' }}>
           Don&apos;t have an account?
-          <ModalLogSpan onClick={toOpenRegisterModal}>Register</ModalLogSpan>
         </p>
       </ModallogContainer>
     </ModalBackground>
