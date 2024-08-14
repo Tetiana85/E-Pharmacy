@@ -1,4 +1,4 @@
-import{s,j as e,b as n,r as a,a as X,c as _,u as G,f as K,n as V,q as W}from"./index-33e9cd58.js";import{Q as M,B as Z}from"./ReactToastify-c1eef562.js";import{M as ee,a as se}from"./ModalReg-58102c52.js";const ie=s.div`
+import{s,j as e,b as n,r as a,a as X,c as _,u as G,f as K,n as V,q as W}from"./index-577cf3e6.js";import{Q as M,B as Z}from"./ReactToastify-6c1076e9.js";import{M as ee,a as se}from"./ModalReg-5f333613.js";const ie=s.div`
   margin: 72px auto;
   display: flex;
   gap: 20px;
@@ -61,7 +61,6 @@ import{s,j as e,b as n,r as a,a as X,c as _,u as G,f as K,n as V,q as W}from"./i
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     width: 324px;
     height: 284px;
@@ -138,7 +137,7 @@ import{s,j as e,b as n,r as a,a as X,c as _,u as G,f as K,n as V,q as W}from"./i
   &:hover,
   &:focus,
   &:active {
-    color: #28fc2f;
+    color: rgba(89, 177, 122, 0.4);
   }
 `,le=s.div`
   border-radius: 27px;
