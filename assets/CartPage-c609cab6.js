@@ -1,4 +1,4 @@
-import{s as a,r as h,a as A,f as F,j as e,i as N,p as I,q as U,t as $,c as H,v as Q,w as Y}from"./index-c15e17e0.js";import{c as J,b as C,u as L,Q as V,B as G}from"./ReactToastify-eb468638.js";const K=a.div`
+import{s as a,r as h,a as A,f as F,j as e,n as N,w as I,x as U,y as $,c as H,z as Q,A as Y}from"./index-33e9cd58.js";import{c as J,b as C,u as L,Q as V,B as G}from"./ReactToastify-c1eef562.js";const K=a.div`
   width: 1224px;
   padding: 20px;
   margin: auto;
@@ -244,6 +244,7 @@ import{s as a,r as h,a as A,f as F,j as e,i as N,p as I,q as U,t as $,c as H,v a
   }
 `,le=a.button`
   border-radius: 40px;
+  cursor: pointer;
   border: none;
   padding: 8px 12px;
   width: 89px;

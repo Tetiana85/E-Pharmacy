@@ -1,4 +1,4 @@
-import{s,j as e,b as n,r as a,a as X,c as _,u as G,f as K,i as V,n as W}from"./index-c15e17e0.js";import{Q as M,B as Z}from"./ReactToastify-eb468638.js";import{M as ee,a as se}from"./ModalReg-a45f69db.js";const ie=s.div`
+import{s,j as e,b as n,r as a,a as X,c as _,u as G,f as K,n as V,q as W}from"./index-33e9cd58.js";import{Q as M,B as Z}from"./ReactToastify-c1eef562.js";import{M as ee,a as se}from"./ModalReg-58102c52.js";const ie=s.div`
   margin: 72px auto;
   display: flex;
   gap: 20px;

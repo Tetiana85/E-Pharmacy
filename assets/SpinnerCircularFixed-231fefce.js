@@ -1,4 +1,4 @@
-import{s as r,R as p}from"./index-c15e17e0.js";const S=r.div`
+import{s as r,t as p}from"./index-33e9cd58.js";const S=r.div`
   width: 1223px;
   padding: 72px 20px;
   margin: auto;
