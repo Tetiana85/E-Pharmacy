@@ -11,7 +11,7 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import { farmaReducer } from './slise';
+import { farmaReducer } from './slice';
 
 const persistConfig = {
   key: 'root',
@@ -22,7 +22,7 @@ const persistedReducer = persistReducer(persistConfig, farmaReducer);
 
 export const store = configureStore({
   reducer: persistedReducer,
-  middleware: getDefaultMiddleware =>
+  middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],

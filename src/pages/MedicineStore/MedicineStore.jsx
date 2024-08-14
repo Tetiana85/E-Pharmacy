@@ -52,7 +52,13 @@ const MedicineStore = () => {
       <h3>Medicine store</h3>
       {isLoading ? (
         <SpinerDiv>
-          <SpinnerCircularFixed color="#59b17a" />
+          <SpinnerCircularFixed
+            size={50}
+            thickness={100}
+            speed={100}
+            color="rgba(57, 172, 115, 1)"
+            secondaryColor="rgba(172, 212, 182, 0.6)"
+          />
         </SpinerDiv>
       ) : (
         <MedicineStoreUl>

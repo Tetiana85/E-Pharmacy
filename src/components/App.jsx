@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import { SpinnerCircularFixed } from 'spinners-react';
 import SharedLayout from './SharedLayout/SharedLayout';
 
 const Home = lazy(() => import('../pages/Home/Home'));
@@ -14,7 +15,25 @@ const Cart = lazy(() => import('./CartPage/CartPage'));
 const App = () => {
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '20%',
+            }}
+          >
+            <SpinnerCircularFixed
+              size={50}
+              thickness={100}
+              speed={100}
+              color="rgba(57, 172, 115, 1)"
+              secondaryColor="rgba(172, 212, 182, 0.6)"
+            />
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />} />

@@ -14,6 +14,7 @@ import {
   CartMain,
   CartPriceDiv,
   CartRadioDiv,
+  RadioButton,
 } from './CartPage.styled';
 import CartProducts from '../CartProducts/CartProducts';
 import { useEffect, useState } from 'react';
@@ -186,9 +187,8 @@ const CartPage = () => {
                 You can pay us in a multiple way in our payment gateway system.
               </p>
               <CartRadioDiv role="group" aria-labelledby="paymentMethod">
-                <li className="CartRadioItem">
-                  <input
-                    className="RadioButton"
+                <li>
+                  <RadioButton
                     type="radio"
                     name="paymentMethod"
                     value="Cash On Delivery"
@@ -198,9 +198,8 @@ const CartPage = () => {
                   />
                   <span>Cash On Delivery</span>
                 </li>
-                <li className="CartRadioItem">
-                  <input
-                    className="RadioButton"
+                <li>
+                  <RadioButton
                     type="radio"
                     name="paymentMethod"
                     value="Bank"

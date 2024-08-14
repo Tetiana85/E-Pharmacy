@@ -1,9 +1,19 @@
 import styled from 'styled-components';
+
+export const LoaderContainer = styled.div`
+  position: absolute;
+  top: 300px;
+  right: 20%;
+  transform: translateX(-50%);
+`;
+
 export const CartProductUl = styled.ul`
   width: 460px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+  position: relative;
 
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     width: 704px;
@@ -98,6 +108,12 @@ export const CartProductPlusMinusButton = styled.button`
   border: none;
   color: #59b17a;
   font-size: 27px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba(89, 177, 122, 0.4);
+  }
 `;
 export const CartButtonsDiv = styled.div`
   display: flex;

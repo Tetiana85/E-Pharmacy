@@ -54,8 +54,22 @@ export const CartInput = styled.input`
   width: 260px;
   height: 44px;
   padding: 18px;
+  font-size: 12px;
   display: flex;
   margin-top: 8px;
+
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #59b17a;
+    outline: none;
+  }
+
   @media screen and (max-width: 767px) {
     width: 295px;
   }
@@ -103,6 +117,7 @@ export const CartFormButton = styled.button`
   font-size: 14px;
   line-height: 129%;
   color: #fff;
+  margin-top: 6px;
   cursor: ${(props) => (props.disabled ? 'none' : 'pointer')};
   transition: box-shadow 0.3s ease;
   &:hover,
@@ -114,7 +129,7 @@ export const CartFormButton = styled.button`
 `;
 export const CartForHr = styled.hr`
   width: 530px;
-  margin: 40px auto;
+  margin: 26px auto 40px auto;
   border: 0.5px solid rgba(29, 30, 33, 0.1);
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -149,38 +164,42 @@ export const CartRadioItem = styled.li`
 `;
 
 export const RadioButton = styled.input`
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
   cursor: pointer;
+  position: relative;
 
   &:before {
     content: '';
     position: absolute;
     top: 50%;
-    width: 14px;
-    height: 14px;
+    left: 50%;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    background-color: #59b17a;
-    border: 1px solid #d1d5db;
+    background-color: #fff;
+    border: 2px solid rgba(18, 20, 23, 0.2);
   }
 
   &:checked:before {
-    border-color: #fcfcfc;
+    border-color: #59b17a;
+    background-color: #fff;
   }
 
   &:checked::after {
     content: '';
     position: absolute;
     top: 50%;
-    width: 5px;
-    height: 5px;
+    left: 50%;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
-    background-color: #fcfcfc;
+    background-color: #59b17a;
     transform: translate(-50%, -50%);
     visibility: visible;
   }
@@ -190,8 +209,10 @@ export const CartError = styled.div`
   color: red;
   position: relative;
   left: 20px;
+  font-size: 12px;
 `;
 
 export const CartErrorRadio = styled.div`
   color: red;
+  font-size: 12px;
 `;

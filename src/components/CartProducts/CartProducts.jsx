@@ -13,6 +13,7 @@ import {
   DopDiv,
   DopDivHealth,
   DopDivOrder,
+  LoaderContainer,
 } from './CartProducts.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -21,9 +22,11 @@ import {
   removeCartToId,
   safeToken,
 } from '../../redux/operation';
+import { SpinnerCircularFixed } from 'spinners-react';
 
 const CartProducts = ({ priceChange, arr }) => {
   const [quantities, setQuantities] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
   const [isToken, setIsToken] = useState(false);
   const [cartArray, setCartArray] = useState([]);
@@ -73,6 +76,7 @@ const CartProducts = ({ priceChange, arr }) => {
           }
         }
       }
+      setIsLoading(false);
     };
     if (isToken) {
       return;
@@ -145,13 +149,24 @@ const CartProducts = ({ priceChange, arr }) => {
       });
     }
   };
+
   const formatPrice = (price) => {
     return price.toFixed(2);
   };
 
   return (
     <>
-      {isToken && cartArray.length !== 0 ? (
+      {isLoading ? (
+        <LoaderContainer>
+          <SpinnerCircularFixed
+            size={50}
+            thickness={100}
+            speed={100}
+            color="rgba(57, 172, 115, 1)"
+            secondaryColor="rgba(172, 212, 182, 0.6)"
+          />
+        </LoaderContainer>
+      ) : isToken && cartArray.length !== 0 ? (
         <CartProductUl>
           {cartArray.map((item) => (
             <CartProductLi key={item._id}>
@@ -208,4 +223,5 @@ const CartProducts = ({ priceChange, arr }) => {
     </>
   );
 };
+
 export default CartProducts;
