@@ -130,12 +130,12 @@ export const LogoutButton = styled.button`
   border: 1px solid rgba(89, 177, 122, 0.5);
   border-radius: 60px;
   padding: 16px 32px;
-  /* width: 115px; */
   height: 46px;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
   color: #59b17a;
+  cursor: pointer;
   @media screen and (max-width: 1280px) {
     display: none;
   }

@@ -1,7 +1,6 @@
 import {
   ButtonsDiv,
   FieldSearch,
-  FieldSelector,
   FilterButton,
   FilterForm,
   MedicineAddButton,
@@ -17,6 +16,7 @@ import {
   SearchSvg,
 } from './Medicine.styled';
 import { Formik } from 'formik';
+import Select from 'react-select';
 import * as Yup from 'yup';
 import sprite from '../../img/sprite.svg';
 import { useEffect, useState } from 'react';
@@ -82,7 +82,7 @@ const Medicine = () => {
       if (prod.meta.requestStatus === 'fulfilled') {
         setProductArray(prod.payload.products);
         setTotalPages(prod.payload.totalPages);
-        setOptions(categ.payload);
+        setOptions(categ.payload.map((cat) => ({ value: cat, label: cat })));
       }
     };
 
@@ -127,7 +127,7 @@ const Medicine = () => {
         setProductArray(prod.payload.products);
         setTotalPages(prod.payload.totalPages);
       }
-      setOptions(categ.payload);
+      setOptions(categ.payload.map((cat) => ({ value: cat, label: cat })));
     };
 
     if (filter) {
@@ -220,6 +220,88 @@ const Medicine = () => {
     setIsModalRegOpen(false);
   };
 
+  const customStyles = {
+    control: (baseStyles, state) => ({
+      ...baseStyles,
+      border: state.isFocused
+        ? '1px solid #59b17a'
+        : '1px solid rgba(29, 30, 33, 0.1)',
+      '&:hover': {
+        border: '1px solid #59b17a',
+      },
+      boxShadow: state.isFocused ? null : baseStyles.boxShadow,
+      outline: 'none',
+      width: '214px',
+      height: '44px',
+      background: '#fff',
+      borderRadius: '60px',
+      fontSize: '12px',
+      fontWeight: '400',
+      cursor: 'pointer',
+      fontFamily: 'Inter, sans-serif',
+    }),
+    placeholder: (baseStyles) => ({
+      ...baseStyles,
+      color: 'rgba(29, 30, 33, 0.4)',
+      fontSize: '12px',
+      fontWeight: '400',
+    }),
+    option: (baseStyles, state) => ({
+      ...baseStyles,
+      fontFamily: 'Inter, sans-serif',
+      border: 'none',
+      fontSize: '12px',
+      fontWeight: '400',
+      outline: 'none',
+      background: state.isSelected
+        ? 'transparent'
+        : state.isFocused
+          ? 'transparent'
+          : 'transparent',
+      color: state.isSelected
+        ? '#59b17a'
+        : state.isFocused
+          ? '#59b17a'
+          : '#1D1E21',
+      marginBottom: '-10px',
+    }),
+
+    menu: (baseStyles) => ({
+      ...baseStyles,
+      borderRadius: '10px',
+      boxShadow: '0 4px 36px 0 rgba(0, 0, 0, 0.02)',
+      fontSize: '12px',
+      fontWeight: '400',
+      marginTop: '5px',
+    }),
+    menuList: (baseStyles) => ({
+      ...baseStyles,
+      padding: 0,
+      overflow: 'hidden',
+    }),
+    valueContainer: (baseStyles) => ({
+      ...baseStyles,
+      borderRadius: '14px',
+      paddingLeft: '18px',
+      boxShadow: '0 4px 36px 0 rgba(0, 0, 0, 0.02)',
+    }),
+    clearIndicator: (baseStyles) => ({
+      ...baseStyles,
+      display: 'none',
+    }),
+    dropdownIndicator: (baseStyles) => ({
+      ...baseStyles,
+      color: '#121417',
+      paddingRight: '18px',
+      '&:hover': {
+        color: '#121417',
+      },
+    }),
+    indicatorSeparator: () => ({
+      display: 'none',
+    }),
+  };
+
   return (
     <MedicineContainer>
       <ToastContainer />
@@ -234,32 +316,28 @@ const Medicine = () => {
           });
         }}
       >
-        {({ isSubmitting, handleChange, values }) => (
+        {({ isSubmitting, handleChange, values, setFieldValue }) => (
           <FilterForm>
             <div>
-              <FieldSelector
-                as="select"
+              <Select
+                id="category"
                 name="category"
-                onChange={(e) => {
-                  handleChange(e);
+                options={options}
+                styles={customStyles}
+                placeholder="Product category"
+                onChange={(option) => {
+                  setFieldValue('category', option.value);
                   setFilterValues((prev) => ({
                     ...prev,
-                    category: e.target.value,
+                    category: option.value,
                   }));
                 }}
                 value={
-                  filterValues.category
-                    ? filterValues.category
-                    : values.category
+                  options
+                    ? options.find((option) => option.value === values.category)
+                    : ''
                 }
-              >
-                <option value="" label="Product category" />
-                {options.map((category, index) => (
-                  <option key={index} value={category}>
-                    {category}
-                  </option>
-                ))}
-              </FieldSelector>
+              />
             </div>
             <div style={{ position: 'relative' }}>
               <FieldSearch
@@ -295,7 +373,7 @@ const Medicine = () => {
       <MedicineUl>
         {isLoading ? (
           <SpinerDiv>
-            <SpinnerCircularFixed color="#59b17a"/>
+            <SpinnerCircularFixed color="#59b17a" />
           </SpinerDiv>
         ) : pruductArray.length === 0 ? (
           <div>Nothing was found for your request</div>
@@ -344,4 +422,5 @@ const Medicine = () => {
     </MedicineContainer>
   );
 };
+
 export default Medicine;

@@ -80,6 +80,7 @@ export const CartProductButtonsDiv = styled.div`
 `;
 export const CartProductRemove = styled.button`
   border-radius: 40px;
+  cursor: pointer;
   border: none;
   padding: 8px 12px;
   width: 89px;

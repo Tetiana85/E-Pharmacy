@@ -186,41 +186,14 @@ export const FilterForm = styled(Form)`
   }
 `;
 
-export const FieldSelector = styled(Field)`
-  border: 1px solid rgba(29, 30, 33, 0.1);
-  border-radius: 60px;
-  width: 214px;
-  height: 44px;
-  background: #fff;
-  padding: 10px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #1d1e21;
-
-  &::placeholder {
-    color: rgba(29, 30, 33, 0.4);
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: #59b17a;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-`;
-
 export const FieldSearch = styled(Field)`
   border: 1px solid rgba(29, 30, 33, 0.1);
   border-radius: 60px;
   width: 214px;
   height: 44px;
   background: #fff;
-  margin-right: 6px;
-  padding: 10px;
+  padding-left: 18px;
+  padding-right: 40px;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -234,6 +207,7 @@ export const FieldSearch = styled(Field)`
   &:focus,
   &:active {
     border-color: #59b17a;
+    outline: none;
   }
 
   @media screen and (max-width: 767px) {
