@@ -1,4 +1,4 @@
-import{s as e}from"./index-577cf3e6.js";const t=e.div`
+import{s as e}from"./index-52828b02.js";const t=e.div`
   width: 1223px;
   padding: 72px 20px;
   margin: auto;
