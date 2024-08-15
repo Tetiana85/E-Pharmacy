@@ -51,7 +51,7 @@ const ModalLog = ({ close, openReg }) => {
     const res = await dispatch(logIn(values));
 
     if (res.error?.message === 'Rejected') {
-      toast(res.payload.message);
+      toast(res.payload.message, { fontSize: '16px' });
     } else {
       localStorage.setItem('e-pharmacy', JSON.stringify(res.payload));
       close();

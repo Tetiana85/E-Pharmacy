@@ -66,7 +66,7 @@ const ModalReg = ({ close, openLog }) => {
     const res = await dispatch(registration(values));
 
     if (res.error?.message === 'Rejected') {
-      toast(res.payload.message);
+      toast(res.payload.message, { fontSize: '16px' });
     } else {
       close();
       openLog();

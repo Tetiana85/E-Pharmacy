@@ -87,7 +87,7 @@ const Drug = () => {
 
       if (res.type === 'updateToCart/fulfilled') {
         toast('The product has been added to the cart', {
-          style: { background: '#59b17a', color: 'white' },
+          style: { background: '#59b17a', color: 'white', fontSize: '16px' },
         });
       }
     } else {

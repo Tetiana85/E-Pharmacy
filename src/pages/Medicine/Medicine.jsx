@@ -164,12 +164,7 @@ const Medicine = () => {
       await dispatch(updateCart({ quantity: 1, productId: id }));
 
       toast('The product has been added to the cart', {
-        style: {
-          background: '#59b17a',
-          color: 'white',
-          fontWeight: '400',
-          fontSize: ' 18',
-        },
+        style: { background: '#59b17a', color: 'white', fontSize: '16px' },
       });
     } else {
       setIsModalLogOpen(true);

@@ -84,7 +84,7 @@ const CartPage = () => {
       setTotalPrice(0);
       resetForm();
       toast('Order placed successfully and cart cleared', {
-        style: { background: '#59b17a', color: 'white' },
+        style: { background: '#59b17a', color: 'white', fontSize: '16px' },
         autoClose: 2000,
       });
     } catch (error) {

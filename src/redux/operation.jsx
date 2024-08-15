@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-axios.defaults.baseURL = `https://e-pharmacy-back.vercel.app`;
-export const safeToken = token => {
+axios.defaults.baseURL = `https://e-pharmacy-back-psi.vercel.app`;
+export const safeToken = (token) => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
 
