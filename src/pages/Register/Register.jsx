@@ -63,7 +63,15 @@ const Register = () => {
     if (res.error?.message === 'Rejected') {
       toast(res.payload.message);
     } else {
-      navigate('/login');
+      const loginRes = await dispatch(
+        logIn({ email: values.email, password: values.password })
+      );
+      if (loginRes.error?.message === 'Rejected') {
+        toast(loginRes.payload.message);
+      } else {
+        localStorage.setItem('e-pharmacy', JSON.stringify(loginRes.payload));
+        navigate('/medicine');
+      }
     }
   };
 
@@ -77,12 +85,15 @@ const Register = () => {
       navigate('/medicine');
     }
   };
+
   const toLogin = () => {
     navigate('/login');
   };
+
   const toRegistration = () => {
     navigate('/register');
   };
+
   return (
     <RegisterContainer>
       <ToastContainer toastStyle={{ background: '#f30e0e', color: 'white' }} />
@@ -198,4 +209,5 @@ const Register = () => {
     </RegisterContainer>
   );
 };
+
 export default Register;

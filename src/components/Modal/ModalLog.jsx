@@ -8,7 +8,6 @@ import {
   ModalLogField,
   ModalLogForm,
   ModalLogH3,
-  ModalLogSpan,
   ModallogContainer,
 } from './ModalLog.styled';
 import { useDispatch } from 'react-redux';

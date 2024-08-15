@@ -77,13 +77,15 @@ const CartPage = () => {
       products: [...productArray],
     };
 
+    console.log('Data to be sent to server:', data);
+
     try {
       await dispatch(toOrder(data));
 
       await dispatch(clearCart());
       setTotalPrice(0);
       resetForm();
-      toast('Order placed successfully and cart cleared', {
+      toast('Order placed successfully', {
         style: { background: '#59b17a', color: 'white', fontSize: '16px' },
         autoClose: 2000,
       });
@@ -98,7 +100,7 @@ const CartPage = () => {
       email: '',
       phone: '',
       address: '',
-      paymentMethod: '',
+      paymentMethod: 'Cash On Delivery',
     },
     validationSchema: validationSchema,
     onSubmit: (values, { resetForm }) => {

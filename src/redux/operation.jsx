@@ -160,15 +160,38 @@ export const getUser = createAsyncThunk('getUser', async (data, thunkAPI) => {
     return thunkAPI.rejectWithValue(error.message);
   }
 });
+
+// export const toOrder = createAsyncThunk('toOrder', async (data, thunkAPI) => {
+//   try {
+//     console.log('Data being sent:', data);
+//     const respons = await axios.post(`/api/cart/checkout`, data);
+
+//     return respons.data;
+//   } catch (error) {
+//     return thunkAPI.rejectWithValue(error.message);
+//   }
+// });
+
 export const toOrder = createAsyncThunk('toOrder', async (data, thunkAPI) => {
   try {
-    const respons = await axios.post(`/api/cart/checkout`, data);
+    const formattedData = {
+      ...data,
+      products: data.products.map((product) => product.productId),
+    };
 
-    return respons.data;
+    console.log('Formatted Data being sent:', formattedData);
+
+    console.log('Request Body:', JSON.stringify(formattedData, null, 2));
+
+    const response = await axios.post(`/api/cart/checkout`, formattedData);
+
+    return response.data;
   } catch (error) {
+    console.error('Error in toOrder thunk:', error);
     return thunkAPI.rejectWithValue(error.message);
   }
 });
+
 export const clearCart = createAsyncThunk(
   'clearCart',
   async (data, thunkAPI) => {

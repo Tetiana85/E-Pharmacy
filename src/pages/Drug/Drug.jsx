@@ -86,9 +86,9 @@ const Drug = () => {
       const res = await dispatch(updateCart({ quantity, productId: id }));
 
       if (res.type === 'updateToCart/fulfilled') {
-        toast('The product has been added to the cart', {
-          style: { background: '#59b17a', color: 'white', fontSize: '16px' },
-        });
+        // toast('The product has been added to the cart', {
+        //   style: { background: '#59b17a', color: 'white', fontSize: '16px' },
+        // });
       }
     } else {
       setIsModalLogOpen(true);
