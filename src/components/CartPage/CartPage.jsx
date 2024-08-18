@@ -77,8 +77,6 @@ const CartPage = () => {
       products: [...productArray],
     };
 
-    console.log('Data to be sent to server:', data);
-
     try {
       await dispatch(toOrder(data));
 
