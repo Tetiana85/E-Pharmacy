@@ -44,7 +44,7 @@ const validationSchema = Yup.object({
 
 const Medicine = () => {
   const isTablet = useMediaQuery({
-    query: '(max-width: 1280px)',
+    query: '(min-width: 768px)',
   });
   const [options, setOptions] = useState([]);
   const [pruductArray, setProductArray] = useState([]);
@@ -226,7 +226,7 @@ const Medicine = () => {
       },
       boxShadow: state.isFocused ? null : baseStyles.boxShadow,
       outline: 'none',
-      width: '214px',
+      width: isTablet ? '214px' : '100%',
       height: '44px',
       background: '#fff',
       borderRadius: '60px',
@@ -386,8 +386,13 @@ const Medicine = () => {
               </MedicineImgDiv>
               <MedicineInfDiv>
                 <MedicineNameDiv>
-                  <p>{item.name}</p>
-                  <p>৳{item.price}</p>
+                  <p className="medicineP">{item.name}</p>
+                  <p
+                    className="medicinePrice"
+                    style={{ fontWeight: 'bold !important' }}
+                  >
+                    ₴{item.price}
+                  </p>
                 </MedicineNameDiv>
                 <MedicineFirm>{item.suppliers}</MedicineFirm>
                 <ButtonsDiv>

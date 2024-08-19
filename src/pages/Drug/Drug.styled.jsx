@@ -30,18 +30,19 @@ export const BackButton = styled.svg`
 
 export const DrugCart = styled.div`
   height: 531px;
-  width: 364px;
+  max-width: 335px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
     width: 688px;
     height: 284px;
   }
-  @media screen and (max-width: 767px) {
-    width: 335px;
+  @media screen and (min-width: 768px) {
+    width: 364px;
+    height: 531px;
   }
 `;
 export const DrugImgDiv = styled.div`

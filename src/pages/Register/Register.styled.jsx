@@ -3,62 +3,91 @@ import styled from 'styled-components';
 export const RegisterContainer = styled.div`
   margin: auto;
   display: flex;
-  justify-content: center;
-  gap: 54px;
-  padding: 199px 0;
   box-sizing: border-box;
   position: relative;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 64px 0px;
-    width: 704px;
+  flex-direction: column;
+  align-items: center;
+  padding: 106px 10px;
+  max-width: 335px;
+
+  @media screen and (min-width: 375px) {
+    padding: 106px 0;
   }
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    width: 335px;
-    padding: 81px 0;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    padding: 168px 122px 0 32px;
+    justify-content: center;
+    gap: 54px;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    padding: 226px 122px 0 32px;
   }
 `;
 export const RegisterText = styled.div`
-  width: 540px;
+  /* width: 540px; */
   position: relative;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 154%;
   color: #1d1e21;
-  @media screen and (max-width: 767px) {
-    font-size: 28px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 375px) {
+  }
+  @media screen and (min-width: 768px) {
     line-height: 121%;
-    width: 100%;
+    width: 614px;
+  }
+  h3 {
+    font-size: calc(26px + (28 - 26) * ((100vw - 320px) / (375 - 320)));
+    font-weight: 600;
+    line-height: 121%;
+    @media screen and (min-width: 375px) {
+      font-size: 28px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 54px;
+      line-height: 121%;
+    }
   }
 `;
 export const RegisterImg = styled.img`
   position: absolute;
-  top: -109px;
-  right: 9px;
-  @media screen and (max-width: 767px) {
+  width: calc(85px + (95 - 85) * ((100vw - 320px) / (375 - 320)));
+  height: calc(83px + (93 - 83) * ((100vw - 320px) / (375 - 320)));
+  top: -58px;
+  right: calc(15px + (10 - 15) * ((100vw - 320px) / (375 - 320)));
+
+  @media screen and (min-width: 375px) {
+    right: 15px;
     width: 95px;
     height: 93px;
-    top: -25px;
-    right: -19px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 179px;
+    height: 175px;
+    top: -100px;
+    right: 16px;
   }
 `;
 export const RegisterTextSpan = styled.span`
   color: #59b17a;
 `;
 export const RegisterForm = styled(Form)`
-  width: 574px;
+  max-width: 335px;
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   color: rgba(29, 30, 33, 0.4);
   display: flex;
   flex-direction: column;
-  gap: 62px;
-  @media screen and (max-width: 767px) {
-    width: 335px;
-    align-items: center;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: 375px) {
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 574px;
+    align-items: flex-start;
   }
 `;
 export const LoginForm = styled(Form)`
@@ -79,8 +108,17 @@ export const RegisterFieldDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  @media screen and (max-width: 767px) {
-    width: 335px;
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    & > :last-child {
+      margin-bottom: 62px;
+    }
+  }
+  .inputBox {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
   }
 `;
 export const LogFieldDiv = styled.div`
@@ -91,26 +129,29 @@ export const LogFieldDiv = styled.div`
 export const RegisterField = styled(Field)`
   border: 1px solid rgba(29, 30, 33, 0.1);
   border-radius: 60px;
-  width: 280px;
+  width: 100%;
   height: 44px;
   background: #fff;
   padding: 0 18px;
-  @media screen and (max-width: 767px) {
-    width: 335px;
+  @media screen and (min-width: 768px) {
+    width: 280px;
   }
 `;
 
 export const RegisterButtonDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 100%;
   align-items: center;
   gap: 14px;
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
 `;
 export const RegisterButton = styled.button`
   border-radius: 60px;
   border: none;
-  width: 280px;
+  width: 100%;
   height: 44px;
   background: #59b17a;
   display: flex;
@@ -127,8 +168,8 @@ export const RegisterButton = styled.button`
   &:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  @media screen and (max-width: 767px) {
-    width: 335px;
+  @media screen and (min-width: 768px) {
+    width: 280px;
   }
 `;
 
@@ -141,7 +182,7 @@ export const FonDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  bottom: 0;
+  bottom: -170px;
   right: 0;
   @media screen and (max-width: 767px) {
     bottom: -122px;

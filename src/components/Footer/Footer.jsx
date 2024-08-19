@@ -24,7 +24,7 @@ const Footer = () => {
           <div>
             <NavLink to="/home">
               <FooterLogoDiv>
-                <img src={logo} alt="Logo"></img>
+                <img src={logo} alt="Logo" className="footerLogo"></img>
                 <p>E-Pharmacy</p>
               </FooterLogoDiv>
             </NavLink>
@@ -57,7 +57,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg width="28" height="28">
+                <svg className="footerIcon">
                   <use href={`${sprite}#facebook`}></use>
                 </svg>
               </Media>
@@ -66,7 +66,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg width="28" height="28">
+                <svg className="footerIcon">
                   <use href={`${sprite}#instagram`}></use>
                 </svg>
               </Media>
@@ -75,7 +75,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg width="28" height="28">
+                <svg className="footerIcon">
                   <use href={`${sprite}#youtube`}></use>
                 </svg>
               </Media>

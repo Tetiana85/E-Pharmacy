@@ -1,20 +1,25 @@
 import styled from 'styled-components';
 export const HeaderContainer = styled.div`
-  width: 1223px;
-  padding: 28px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   position: relative;
   z-index: 5;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 768px;
-    padding: 25px 20px;
+  width: 100%;
+  max-width: 375px;
+  min-width: 320px;
+  padding: 25px 20px;
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    padding: 28px 32px;
   }
-  @media screen and (max-width: 767px) {
-    width: 375px;
+  @media screen and (min-width: 1440px) {
+    padding: 28px 100px;
   }
+  /* @media screen and (max-width: 767px) {
+    
+  } */
 `;
 export const LogoDiv = styled.div`
   display: flex;
@@ -28,12 +33,25 @@ export const LogoDiv = styled.div`
   &:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+  .logoImg {
+    width: 32px;
+    height: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    .logoImg {
+      width: 44px;
+      height: 44px;
+    }
+  }
 `;
 export const LogoText = styled.p`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -0.03em;
   color: ${({ $isHomePage }) => ($isHomePage ? ' #fff' : '#1d1e21')};
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 export const NavDiv = styled.nav`
   display: flex;

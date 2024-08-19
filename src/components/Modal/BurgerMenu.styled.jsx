@@ -16,12 +16,13 @@ export const ModalBurgerContainer = styled.div`
   height: 100%;
   margin: 0 0 0 49%;
   position: relative;
-  padding: 20% 10%;
+  padding: 20% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 101;
-  gap: 30%;
+  gap: 56%;
+  justify-content: flex-end;
   @media (min-width: 768px) {
     margin: 0 0 0 57%;
   }

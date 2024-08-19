@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const MedicineStoreContainer = styled.div`
-  width: 1223px;
+  /* width: 1223px; */
   padding: 72px 20px;
   margin: auto;
   box-sizing: border-box;
@@ -11,21 +11,50 @@ export const MedicineStoreContainer = styled.div`
   font-size: 28px;
   line-height: 114%;
   color: #1d1e21;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 704px;
-    padding: 62px 0px;
+  max-width: 335px;
+  padding: 0 10px;
+  h3 {
+    font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (375 - 320)));
+    margin-top: 35px;
+    margin-left: 10px;
   }
-  @media screen and (max-width: 767px) {
-    width: 335px;
+  @media screen and (min-width: 375px) {
+    h3 {
+      margin-top: 36px;
+      font-size: 28px;
+      margin-left: 20px;
+    }
     padding: 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-bottom: 120px;
+    max-width: 704px;
+    h3 {
+      margin-top: 52px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1184px;
+    /* margin-bottom: 80px; */
+    padding: 0;
+    h3 {
+      margin-top: 72px;
+    }
   }
 `;
 export const MedicineStoreUl = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) {
     gap: 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 20px;
+    & > li {
+      margin-bottom: 40px;
+    }
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 80px;
@@ -35,25 +64,28 @@ export const MedicineStoreLi = styled.li`
   position: relative;
   border: 1.15px solid #f1f1f1;
   border-radius: 27px;
-  padding: 40px;
-  width: 381px;
-  height: 276px;
+  width: 100%;
+  max-width: 335px;
+  height: 202px;
+  padding: 32px;
   background: #e7f1ed;
   box-sizing: border-box;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 140%;
   color: #1d1e21;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 344px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 344px;
+    height: 276px;
+    font-size: 20px;
   }
-  @media screen and (max-width: 767px) {
-    width: 335px;
-    height: 202px;
-    padding: 32px;
+  @media screen and (min-width: 1440px) {
+    max-width: 381px;
+    padding: 40px;
   }
 `;
 export const MedicineStoreName = styled.p`
@@ -64,13 +96,14 @@ export const MedicineStoreName = styled.p`
 `;
 export const MedicineStoreAdres = styled.div`
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 125%;
   color: #93939a;
   display: flex;
+  margin-bottom: 18px;
   gap: 8px;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
   }
 `;
 export const NameDiv = styled.div`
@@ -166,6 +199,10 @@ export const StarNumber = styled.p`
 `;
 export const Adress = styled.p`
   width: 120px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const SpinerDiv = styled.div`

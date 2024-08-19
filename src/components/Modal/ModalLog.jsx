@@ -20,7 +20,10 @@ import { useCallback, useEffect } from 'react';
 
 const validationLogSchema = Yup.object({
   email: Yup.string()
-    .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      'The email must be in the format: example@example.com'
+    )
     .required('Email is required'),
 
   password: Yup.string()

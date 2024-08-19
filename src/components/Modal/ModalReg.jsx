@@ -26,13 +26,16 @@ const validationSchema = Yup.object({
     .min(2, 'The Name must contain at least 2 characters')
     .required('Name is required'),
   email: Yup.string()
-    .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      'The email must be in the format: example@example.com'
+    )
     .required('Email is required'),
   phone: Yup.string()
     .required('Phone number is required')
     .matches(
       /^[+]?[0-9]{10,15}$/,
-      'The phone number must consist of numbers only'
+      'The phone number must be in the format: +1234567890'
     )
     .min(10, 'The phone number must contain at least 10 digits'),
   password: Yup.string()

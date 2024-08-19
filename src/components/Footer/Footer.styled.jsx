@@ -2,57 +2,89 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer`
   background: #59b17a;
   width: 100%;
-  height: 328px;
-  padding: 40px 0;
+  height: 334px;
+  padding: 20px;
   color: #f7f8fa;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    padding: 0px;
+  @media screen and (min-width: 375px) {
   }
-  @media screen and (max-width: 767px) {
-    height: 334px;
-    padding: 20px;
+  @media screen and (min-width: 768px) {
+    padding: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0;
   }
 `;
 export const InnerFooterContainer = styled.div`
   margin: auto;
-  width: 1202px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 768px;
-    padding: 32px;
-  }
-  @media screen and (max-width: 767px) {
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    /* width: 768px; */
   }
 `;
 export const TopFooterDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 64px;
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    margin-bottom: 34px;
+  flex-direction: column;
+  margin-bottom: calc(70px + (80 - 70) * ((100vw - 320px) / (375 - 320)));
+
+  @media screen and (min-width: 375px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 88px;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 40px 128px 64px 128px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
   }
 `;
 export const Nav = styled.nav`
   display: flex;
-  gap: 50px;
+  gap: 31px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 125%;
   color: #f7f8fa;
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+    font-size: 16px;
+    margin-top: 0;
+  }
 `;
 export const FooterLogoDiv = styled.div`
   display: flex;
   align-items: center;
   gap: 14px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -0.03em;
   color: #f7f8fa;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  .footerLogo {
+    width: 32px;
+    @media screen and (min-width: 768px) {
+      width: 44px;
+    }
+  }
 `;
 export const FooterText = styled.p`
-  width: 311px;
+  max-width: 261px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 311px;
+  }
 `;
 export const MediaDiv = styled.div`
   display: flex;
@@ -77,24 +109,35 @@ export const Media = styled.a`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(247, 248, 250, 0.5);
   }
+  .footerIcon {
+    width: 28px;
+    height: 28px;
+    /* @media screen and (min-width: 768px) {
+      width: 44px;
+      height: 44px;
+    } */
+  }
 `;
 export const BottomFooterDiv = styled.div`
   display: flex;
-  gap: 24px;
+  font-size: 10px;
+  gap: 10px;
+  font-weight: 400;
   align-items: center;
-  justify-content: center;
-  padding-top: 40px;
+  justify-content: flex-start;
+  padding-top: 20px;
   border-top: 1px solid rgba(247, 248, 250, 0.3);
-  @media screen and (max-width: 767px) {
-    padding-top: 20px;
-    font-weight: 400;
-    font-size: 10px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    font-size: 14px;
     line-height: 100%;
     color: #f7f8fa;
-    white-space: nowrap;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: center;
+    gap: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 41px;
   }
 `;
 export const Span = styled.span`
@@ -118,14 +161,17 @@ export const FooterNavP = styled.p`
 export const Div = styled.div`
   display: flex;
   gap: 270px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  /* margin-top: 40px; */
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 32px;
   }
-  @media screen and (max-width: 767px) {
-    display: flex;
-    margin-top: 40px;
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 704px;
+    justify-content: space-between;
   }
 `;

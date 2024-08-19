@@ -2,34 +2,44 @@ import styled from 'styled-components';
 export const NearestStoreUl = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 36px;
-  width: 1248px;
   margin: auto;
-  margin-bottom: 120px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 704px;
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 335px;
+  padding: 0 10px;
+  gap: 20px;
+  @media screen and (min-width: 375px) {
+    padding: 0;
     gap: 16px;
-    flex-wrap: wrap;
   }
-  @media screen and (max-width: 767px) {
-    width: 335px;
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+    margin-bottom: 120px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1248px;
+    gap: 36px;
   }
 `;
+
 export const NearestStoreLi = styled.li`
   position: relative;
   border: 1.15px solid #f1f1f1;
   border-radius: 27px;
-  padding: 40px;
-  width: 392px;
-  height: 232px;
+  padding: 32px;
+  height: 202px;
   background: #e7f1ed;
   box-sizing: border-box;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 344px;
+  width: 100%;
+  max-width: 335px;
+  height: 202px;
+  @media screen and (min-width: 768px) {
+    max-width: 344px;
+    height: 232px;
+    padding: 40px 24px 36px 40px;
   }
-  @media screen and (max-width: 767px) {
-    width: 335px;
-    height: 202px;
+  @media screen and (min-width: 1440px) {
+    max-width: 392px;
   }
 `;
 export const NearestStoreName = styled.div`
@@ -47,10 +57,14 @@ export const NearestStoreName = styled.div`
   }
 `;
 export const Name = styled.p`
-  width: 150px;
+  width: 123px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 export const NearestStoreOpen = styled.div`
   display: flex;

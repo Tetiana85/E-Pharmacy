@@ -1,31 +1,47 @@
 import styled from 'styled-components';
 export const ReviewsUl = styled.ul`
   display: flex;
-  gap: 28px;
+  /* gap: 28px; */
+  padding: 0 10px;
+  @media screen and (min-width: 375px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 28px;
+  }
 `;
 export const ReviewsLi = styled.li`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  text-align: center;
   border: 1px solid #f1f1f1;
   border-radius: 27px;
-  /* padding: 0px 28px 40px 28px; */
-  padding: 54px 28px;
-  width: 382px;
+  padding: 54px 16px 16px 16px;
+  max-width: 335px;
   height: 232px;
   background: #fdfdfd;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   gap: 16px;
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   text-align: center;
   color: #1d1e21;
-  position: relative;
-  @media screen and (max-width: 767px) {
-    padding: 54px 0px 0px 0px;
-    width: 335px;
+  /* padding: 54px 16px 16px 0px; */
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 344px;
+    padding: 54px 16px 32px 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 382px;
+    padding: 54px 28px 32px 28px;
   }
 `;
 
@@ -35,6 +51,8 @@ export const ReviewsText = styled.p`
   line-height: 125%;
   text-align: center;
   color: #93939a;
+  @media screen and (min-width: 768px) {
+  }
 `;
 export const ReviewsImgDiv = styled.div`
   border-radius: 100%;

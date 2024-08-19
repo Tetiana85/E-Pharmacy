@@ -29,13 +29,16 @@ const validationSchema = Yup.object({
     .min(2, 'The Name must contain at least 2 characters')
     .required('Name is required'),
   email: Yup.string()
-    .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      'The email must be in the format: example@example.com'
+    )
     .required('Email is required'),
   phone: Yup.string()
     .required('Phone number is required')
     .matches(
       /^[+]?[0-9]{10,15}$/,
-      'The phone number must consist of numbers only'
+      'The phone number must be in the format: +1234567890'
     )
     .min(10, 'The phone number must contain at least 10 digits'),
   password: Yup.string()
@@ -45,7 +48,10 @@ const validationSchema = Yup.object({
 
 const validationLogSchema = Yup.object({
   email: Yup.string()
-    .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      'The email must be in the format: example@example.com'
+    )
     .required('Email is required'),
 
   password: Yup.string()
@@ -116,7 +122,7 @@ const Register = () => {
           {({ isSubmitting }) => (
             <RegisterForm>
               <RegisterFieldDiv>
-                <div>
+                <div className="inputBox">
                   <RegisterField
                     type="text"
                     name="name"
@@ -124,7 +130,7 @@ const Register = () => {
                   />
                   <Error name="name" component="div" />
                 </div>
-                <div>
+                <div className="inputBox">
                   <RegisterField
                     type="text"
                     name="email"
@@ -132,7 +138,7 @@ const Register = () => {
                   />
                   <Error name="email" component="div" />
                 </div>
-                <div>
+                <div className="inputBox">
                   <RegisterField
                     type="text"
                     name="phone"
@@ -140,7 +146,7 @@ const Register = () => {
                   />
                   <Error name="phone" component="div" />
                 </div>
-                <div>
+                <div className="inputBox">
                   <RegisterField
                     type="password"
                     name="password"

@@ -100,9 +100,9 @@ const Header = () => {
       <NavLink to="/home">
         <LogoDiv>
           {isHomePage ? (
-            <img src={logoH} alt="Logo"></img>
+            <img className="logoImg" src={logoH} alt="Logo"></img>
           ) : (
-            <img src={logo} alt="Logo"></img>
+            <img className="logoImg" src={logo} alt="Logo"></img>
           )}
 
           <LogoText $isHomePage={isHomePage}>E-Pharmacy</LogoText>
