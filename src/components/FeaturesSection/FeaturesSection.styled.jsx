@@ -48,6 +48,7 @@ export const FeaturesSectionUl = styled.ul`
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   padding: 10px 0;
+  max-width: 100%;
 
   &::-webkit-scrollbar {
     display: none;
@@ -76,13 +77,16 @@ export const FeaturesDiv = styled.div`
   gap: 8px;
   flex: 0 0 auto;
   scroll-snap-align: start;
+  min-width: 240px;
   width: 240px;
 
   @media screen and (min-width: 375px) {
+    min-width: 260px;
     width: 260px;
   }
 
   @media screen and (min-width: 768px) {
+    min-width: unset;
     width: auto;
   }
 `;
