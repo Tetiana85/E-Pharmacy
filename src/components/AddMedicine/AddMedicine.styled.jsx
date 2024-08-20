@@ -4,7 +4,7 @@ import photo from '../../img/Add.png';
 export const AddMedicinesContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
   border-radius: 32px;
   padding: 40px 20px 20px 20px;
   background: #59b17a;
@@ -22,6 +22,7 @@ export const AddMedicinesContainer = styled.div`
     padding: 104px 52px 40px 48px;
     height: 911px;
     gap: 0;
+    margin-bottom: 64px;
   }
   @media screen and (min-width: 1440px) {
     max-width: 1248px;

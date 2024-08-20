@@ -43,16 +43,18 @@ const validationSchema = Yup.object({
 });
 
 const Medicine = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
   const isTablet = useMediaQuery({
     query: '(min-width: 768px)',
   });
+  const isDesktop = useMediaQuery({ query: '(min-width: 1440px)' });
   const [options, setOptions] = useState([]);
   const [pruductArray, setProductArray] = useState([]);
   const [filter, setFilter] = useState(false);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [isToken, setIsToken] = useState('');
-  const [limit] = useState(isTablet ? 9 : 12);
+  const [limit, setLimit] = useState(isMobile ? 8 : isTablet ? 9 : 12);
   const [filterValues, setFilterValues] = useState({
     category: '',
     keyword: '',
@@ -67,6 +69,16 @@ const Medicine = () => {
   const isLoading = useSelector((state) => state.isLoading);
 
   const savedSettings = location.state?.settings;
+
+  useEffect(() => {
+    if (isDesktop) {
+      setLimit(12);
+    } else if (isTablet) {
+      setLimit(9);
+    } else if (isMobile) {
+      setLimit(8);
+    }
+  }, [isMobile, isTablet, isDesktop]);
 
   useEffect(() => {
     const fetchProd = async (settings) => {
