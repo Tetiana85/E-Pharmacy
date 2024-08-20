@@ -1,4 +1,4 @@
-import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}from"./index-d966e263.js";import{e as M}from"./elements-2a1dc22d.js";import{u as j}from"./index-adb8349c.js";const N=i.ul`
+import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}from"./index-86bab93a.js";import{e as M}from"./elements-2a1dc22d.js";import{u as j}from"./index-26a6dbee.js";const N=i.ul`
   width: 100%;
   max-width: 335px;
   display: flex;
@@ -442,6 +442,7 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   padding: 10px 0;
+  max-width: 100%;
 
   &::-webkit-scrollbar {
     display: none;
@@ -468,13 +469,16 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   gap: 8px;
   flex: 0 0 auto;
   scroll-snap-align: start;
+  min-width: 240px;
   width: 240px;
 
   @media screen and (min-width: 375px) {
+    min-width: 260px;
     width: 260px;
   }
 
   @media screen and (min-width: 768px) {
+    min-width: unset;
     width: auto;
   }
 `,oe=()=>e.jsxs(se,{children:[e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Take user orders form online"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Create your shop profile"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Manage your store"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Get more orders"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Storage shed"})]})]}),ae=i.ul`
