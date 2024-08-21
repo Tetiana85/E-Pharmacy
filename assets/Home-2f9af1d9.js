@@ -1,4 +1,4 @@
-import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}from"./index-86bab93a.js";import{e as M}from"./elements-2a1dc22d.js";import{u as j}from"./index-26a6dbee.js";const N=i.ul`
+import{s as i,u as y,j as e,N as l,a as v,r as p,b as d,g as z,c as S,d as k}from"./index-08e53d42.js";import{e as M}from"./elements-2a1dc22d.js";import{u as j}from"./index-d8eab026.js";const N=i.ul`
   width: 100%;
   max-width: 335px;
   display: flex;
@@ -112,10 +112,8 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
     margin-bottom: 64px;
   }
 `,I=i.p`
-  /* width: 609px; */
   font-weight: 600;
   font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (375 - 320)));
-  /* font-size: 74px; */
   width: 100%;
   max-width: 331px;
   line-height: 100%;
@@ -138,7 +136,6 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   width: 134%;
 
   @media screen and (min-width: 768px) {
-    /* max-width: 704px; */
     bottom: -160px;
     right: -96px;
     width: 125%;
@@ -148,7 +145,6 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (375 - 320)));
   line-height: 125%;
   color: #fff;
-  /* width: 207px; */
   position: relative;
   left: calc(167px + (177 - 167) * ((100vw - 320px) / (375 - 320)));
   width: calc(116px + (156 - 116) * ((100vw - 320px) / (375 - 320)));
@@ -337,7 +333,7 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   @media screen and (max-width: 767px) {
     width: 100%;
   }
-`,K=()=>{const n=v(),[d,c]=p.useState([]),h=j({query:"(min-width: 768px) and (max-width: 1280px)"});p.useEffect(()=>{(async()=>{const a=await n(z());a.meta.requestStatus==="fulfilled"&&c(a.payload)})()},[n]);const o=h?d.slice(0,6):d;return e.jsx(C,{children:o==null?void 0:o.map(t=>e.jsxs(F,{children:[e.jsxs(P,{children:[e.jsx(U,{children:t.name}),e.jsxs(B,{children:[e.jsxs(G,{children:[e.jsx("svg",{width:"16",height:"16",children:e.jsx("use",{href:`${s}#starY`})}),e.jsx(_,{children:t.rating})]}),t.status==="open"?e.jsx(O,{children:"open"}):e.jsx(Y,{children:"close"})]})]}),e.jsxs(Q,{children:[e.jsxs(b,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${s}#map-pin`})}),e.jsx(J,{children:t.address})]}),e.jsxs(b,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${s}#phone`})}),e.jsx("p",{children:t.phone})]})]}),e.jsx("img",{src:M,alt:"elements",style:{position:"absolute",bottom:"18px",right:"18px",width:"90px",height:"90px",borderRadius:"18px",transform:"scale(1.4)"}})]},t._id))})},V="/E-Pharmacy/assets/add-mob-dc38c086.png",W="/E-Pharmacy/assets/Add-88b3c7fe.png",X=i.div`
+`,K=()=>{const n=v(),[s,c]=p.useState([]),h=j({query:"(min-width: 768px) and (max-width: 1280px)"});p.useEffect(()=>{(async()=>{const r=await n(z());r.meta.requestStatus==="fulfilled"&&c(r.payload)})()},[n]);const o=h?s.slice(0,6):s;return e.jsx(C,{children:o==null?void 0:o.map(t=>e.jsxs(F,{children:[e.jsxs(P,{children:[e.jsx(U,{children:t.name}),e.jsxs(B,{children:[e.jsxs(G,{children:[e.jsx("svg",{width:"16",height:"16",children:e.jsx("use",{href:`${d}#starY`})}),e.jsx(_,{children:t.rating})]}),t.status==="open"?e.jsx(O,{children:"open"}):e.jsx(Y,{children:"close"})]})]}),e.jsxs(Q,{children:[e.jsxs(b,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${d}#map-pin`})}),e.jsx(J,{children:t.address})]}),e.jsxs(b,{children:[e.jsx("svg",{width:"18",height:"18",children:e.jsx("use",{href:`${d}#phone`})}),e.jsx("p",{children:t.phone})]})]}),e.jsx("img",{src:M,alt:"elements",style:{position:"absolute",bottom:"18px",right:"18px",width:"90px",height:"90px",borderRadius:"18px",transform:"scale(1.4)"}})]},t._id))})},V="/E-Pharmacy/assets/add-mob-dc38c086.png",W="/E-Pharmacy/assets/Add-88b3c7fe.png",X=i.div`
   display: flex;
   align-items: center;
   margin-bottom: 40px;
@@ -427,7 +423,7 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   }
   @media screen and (min-width: 1440px) {
   }
-`,de=()=>{const n=S(),d=()=>{n("/medicine-store")};return e.jsxs(X,{children:[e.jsxs(Z,{children:[e.jsx(ee,{children:"Add the medicines you need online now"}),e.jsx(ie,{children:"Enjoy the convenience of having your prescriptions filled from home by connecting with your community pharmacy through our online platform."}),e.jsx(te,{onClick:d,children:"Buy medicine"})]}),e.jsx(ne,{})]})},se=i.ul`
+`,se=()=>{const n=S(),s=()=>{n("/medicine-store")};return e.jsxs(X,{children:[e.jsxs(Z,{children:[e.jsx(ee,{children:"Add the medicines you need online now"}),e.jsx(ie,{children:"Enjoy the convenience of having your prescriptions filled from home by connecting with your community pharmacy through our online platform."}),e.jsx(te,{onClick:s,children:"Buy medicine"})]}),e.jsx(ne,{})]})},de=i.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -481,20 +477,19 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
     min-width: unset;
     width: auto;
   }
-`,oe=()=>e.jsxs(se,{children:[e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Take user orders form online"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Create your shop profile"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Manage your store"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Get more orders"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${s}#lightning`})}),e.jsx("p",{children:"Storage shed"})]})]}),ae=i.ul`
+`,oe=()=>e.jsxs(de,{children:[e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${d}#lightning`})}),e.jsx("p",{children:"Take user orders form online"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${d}#lightning`})}),e.jsx("p",{children:"Create your shop profile"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${d}#lightning`})}),e.jsx("p",{children:"Manage your store"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${d}#lightning`})}),e.jsx("p",{children:"Get more orders"})]}),e.jsxs(x,{children:[e.jsx("svg",{width:"20",height:"20",children:e.jsx("use",{href:`${d}#lightning`})}),e.jsx("p",{children:"Storage shed"})]})]}),re=i.ul`
   display: flex;
-  /* gap: 28px; */
+  max-width: 335px;
   padding: 0 10px;
-  @media screen and (min-width: 375px) {
-    padding: 0;
-  }
+
   @media screen and (min-width: 768px) {
     gap: 16px;
+    max-width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     gap: 28px;
   }
-`,re=i.li`
+`,ae=i.li`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -503,7 +498,7 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   border: 1px solid #f1f1f1;
   border-radius: 27px;
   padding: 54px 16px 16px 16px;
-  max-width: 335px;
+  width: 100%;
   height: 232px;
   background: #fdfdfd;
   box-sizing: border-box;
@@ -513,8 +508,6 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   line-height: 150%;
   text-align: center;
   color: #1d1e21;
-  /* padding: 54px 16px 16px 0px; */
-  width: 100%;
 
   @media screen and (min-width: 768px) {
     max-width: 344px;
@@ -544,4 +537,4 @@ import{s as i,u as y,j as e,N as l,a as v,r as p,b as s,g as z,c as S,d as k}fro
   width: 100%;
   height: 100%;
   object-fit: cover;
-`,ce=()=>{const n=v(),[d,c]=p.useState([]),h=j({query:"(max-width: 767px)"}),o=j({query:"(min-width: 768px) and (max-width: 1280px)"});return p.useEffect(()=>{(async()=>{const a=await n(k());if(a.meta.requestStatus==="fulfilled"){let r=a.payload;h?r=r.slice(0,1):o&&(r=r.slice(0,2)),c(r)}})()},[n,h,o]),e.jsx(ae,{children:d==null?void 0:d.map(t=>e.jsxs(re,{children:[e.jsx(pe,{children:e.jsx(he,{src:t.url,alt:t.name})}),e.jsx("p",{children:t.name}),e.jsx(xe,{children:t.testimonial})]},t._id))})},le="/E-Pharmacy/assets/IMG-c15dab5e.png",we=()=>(p.useEffect(()=>{window.scrollTo(0,0)},[]),e.jsxs(A,{children:[e.jsx(H,{children:e.jsxs("div",{style:{position:"relative"},children:[e.jsx($,{src:le,alt:"Pills"}),e.jsx(I,{children:"Your medication delivered"}),e.jsx(D,{children:"Say goodbye to all your healthcare worries with us"})]})}),e.jsx(R,{}),e.jsx(T,{children:"Your Nearest Medicine Store"}),e.jsx(E,{children:"Search for Medicine, Filter by your location"}),e.jsx(K,{}),e.jsx(de,{}),e.jsx(oe,{}),e.jsx(L,{children:"Reviews"}),e.jsx(q,{children:"Search for Medicine, Filter by your location"}),e.jsx(ce,{})]}));export{we as default};
+`,ce=()=>{const n=v(),[s,c]=p.useState([]),h=j({query:"(max-width: 767px)"}),o=j({query:"(min-width: 768px) and (max-width: 1280px)"});return p.useEffect(()=>{(async()=>{const r=await n(k());if(r.meta.requestStatus==="fulfilled"){let a=r.payload;h?a=a.slice(0,1):o&&(a=a.slice(0,2)),c(a)}})()},[n,h,o]),e.jsx(re,{children:s==null?void 0:s.map(t=>e.jsxs(ae,{children:[e.jsx(pe,{children:e.jsx(he,{src:t.url,alt:t.name})}),e.jsx("p",{children:t.name}),e.jsx(xe,{children:t.testimonial})]},t._id))})},le="/E-Pharmacy/assets/IMG-c15dab5e.png",we=()=>(p.useEffect(()=>{window.scrollTo(0,0)},[]),e.jsxs(A,{children:[e.jsx(H,{children:e.jsxs("div",{style:{position:"relative"},children:[e.jsx($,{src:le,alt:"Pills"}),e.jsx(I,{children:"Your medication delivered"}),e.jsx(D,{children:"Say goodbye to all your healthcare worries with us"})]})}),e.jsx(R,{}),e.jsx(T,{children:"Your Nearest Medicine Store"}),e.jsx(E,{children:"Search for Medicine, Filter by your location"}),e.jsx(K,{}),e.jsx(se,{}),e.jsx(oe,{}),e.jsx(L,{children:"Reviews"}),e.jsx(q,{children:"Search for Medicine, Filter by your location"}),e.jsx(ce,{})]}));export{we as default};

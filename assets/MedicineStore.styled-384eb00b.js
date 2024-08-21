@@ -1,5 +1,4 @@
-import{s as i}from"./index-86bab93a.js";const t=i.div`
-  /* width: 1223px; */
+import{s as i}from"./index-08e53d42.js";const t=i.div`
   padding: 72px 20px;
   margin: auto;
   box-sizing: border-box;
@@ -35,7 +34,6 @@ import{s as i}from"./index-86bab93a.js";const t=i.div`
   }
   @media screen and (min-width: 1440px) {
     max-width: 1184px;
-    /* margin-bottom: 80px; */
     padding: 0;
     h3 {
       margin-top: 72px;
@@ -89,7 +87,7 @@ import{s as i}from"./index-86bab93a.js";const t=i.div`
   @media screen and (max-width: 767px) {
     margin-bottom: 0px;
   }
-`,o=i.div`
+`,d=i.div`
   font-weight: 400;
   font-size: 14px;
   line-height: 125%;
@@ -100,7 +98,7 @@ import{s as i}from"./index-86bab93a.js";const t=i.div`
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
-`,d=i.div`
+`,o=i.div`
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
@@ -189,4 +187,4 @@ import{s as i}from"./index-86bab93a.js";const t=i.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;export{f as A,h as C,t as M,d as N,m as O,b as S,s as V,n as a,a as b,p as c,c as d,g as e,l as f,o as g,x as h,r as i};
+`;export{f as A,h as C,t as M,o as N,m as O,b as S,s as V,n as a,a as b,p as c,c as d,g as e,l as f,d as g,x as h,r as i};
