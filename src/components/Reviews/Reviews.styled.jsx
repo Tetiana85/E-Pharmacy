@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 export const ReviewsUl = styled.ul`
   display: flex;
-  /* gap: 28px; */
+  max-width: 335px;
   padding: 0 10px;
-  @media screen and (min-width: 375px) {
-    padding: 0;
-  }
+
   @media screen and (min-width: 768px) {
     gap: 16px;
+    max-width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     gap: 28px;
   }
 `;
@@ -22,7 +21,7 @@ export const ReviewsLi = styled.li`
   border: 1px solid #f1f1f1;
   border-radius: 27px;
   padding: 54px 16px 16px 16px;
-  max-width: 335px;
+  width: 100%;
   height: 232px;
   background: #fdfdfd;
   box-sizing: border-box;
@@ -32,8 +31,6 @@ export const ReviewsLi = styled.li`
   line-height: 150%;
   text-align: center;
   color: #1d1e21;
-  /* padding: 54px 16px 16px 0px; */
-  width: 100%;
 
   @media screen and (min-width: 768px) {
     max-width: 344px;

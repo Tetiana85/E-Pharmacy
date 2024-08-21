@@ -12,14 +12,11 @@ export const HeaderContainer = styled.div`
   padding: 25px 20px;
   @media screen and (min-width: 768px) {
     max-width: 100%;
-    padding: 28px 32px;
+    padding: 28px 32px 0 32px;
   }
   @media screen and (min-width: 1440px) {
-    padding: 28px 100px;
+    padding: 28px 128px;
   }
-  /* @media screen and (max-width: 767px) {
-    
-  } */
 `;
 export const LogoDiv = styled.div`
   display: flex;
@@ -31,7 +28,7 @@ export const LogoDiv = styled.div`
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   }
   .logoImg {
     width: 32px;
@@ -54,10 +51,10 @@ export const LogoText = styled.p`
   }
 `;
 export const NavDiv = styled.nav`
-  display: flex;
   align-items: center;
-  @media screen and (max-width: 1280px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
   }
 `;
 export const NavParagraf = styled.div`
@@ -105,8 +102,10 @@ export const InnerDiv = styled.div`
 export const RegDiv = styled.div`
   display: flex;
   gap: 4px;
-  @media screen and (max-width: 1280px) {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
   }
 `;
 export const RegButton = styled.button`
@@ -153,9 +152,10 @@ export const LogoutButton = styled.button`
   font-size: 14px;
   line-height: 100%;
   color: #59b17a;
+  display: none;
   cursor: pointer;
-  @media screen and (max-width: 1280px) {
-    display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
   }
 `;
 export const HeaderCartDiv = styled.div`
@@ -209,15 +209,14 @@ export const HeaderCartNumber = styled.div`
   right: 0;
 `;
 export const BurgerMenu = styled.div`
-  display: none;
-  @media screen and (max-width: 1280px) {
-    display: block;
+  display: block;
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 `;
 export const RegDivTablet = styled.div`
   display: flex;
-  @media screen and (max-width: 1280px) {
-    display: flex;
+  @media screen and (min-width: 1280px) {
     align-items: center;
   }
 `;

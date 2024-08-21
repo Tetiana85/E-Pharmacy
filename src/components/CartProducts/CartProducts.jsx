@@ -183,7 +183,7 @@ const CartProducts = ({ priceChange, arr }) => {
                   <CartProductNamePrice>
                     <p>{item.name}</p>
                     <p>
-                      ৳ {formatPrice(item.price * (quantities[item._id] || 1))}
+                      ₴ {formatPrice(item.price * (quantities[item._id] || 1))}
                     </p>
                   </CartProductNamePrice>
                   <p>For {item.category} Health</p>
@@ -192,7 +192,7 @@ const CartProducts = ({ priceChange, arr }) => {
                   <p>{item.name}</p>
                   <DopDivHealth>For {item.category} Health</DopDivHealth>
                   <p>
-                    ৳ {formatPrice(item.price * (quantities[item._id] || 1))}
+                    ₴ {formatPrice(item.price * (quantities[item._id] || 1))}
                   </p>
                 </DopDivOrder>
                 <CartButtonsDiv>

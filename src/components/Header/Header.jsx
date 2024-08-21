@@ -60,6 +60,7 @@ const Header = () => {
         const res = await dispatch(getUser());
 
         if (res.payload._id) {
+          console.log('User name:', res.payload.name);
           setIsToken(true);
           setUserName(res.payload.name);
           setCartNumber(res.payload.cart.length);

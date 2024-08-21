@@ -112,7 +112,7 @@ const CartPage = () => {
   return (
     <CartContainer>
       <ToastContainer />
-      <h3>Cart</h3>
+      <h3 className="cartName">Cart</h3>
       <CartMain>
         <CartFormDiv>
           <CartFormHead>Enter shipping info </CartFormHead>
@@ -222,7 +222,7 @@ const CartPage = () => {
             </p>
             <CartPriceDiv>
               <p>Total:</p>
-              <p>৳ {formatPrice(totalPrice)}</p>
+              <p>₴ {formatPrice(totalPrice)}</p>
             </CartPriceDiv>
             <CartFormButton type="submit" disabled={totalPrice === 0}>
               Place order

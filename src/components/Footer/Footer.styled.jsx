@@ -5,8 +5,6 @@ export const FooterContainer = styled.footer`
   height: 334px;
   padding: 20px;
   color: #f7f8fa;
-  @media screen and (min-width: 375px) {
-  }
   @media screen and (min-width: 768px) {
     padding: 32px;
   }
@@ -17,7 +15,6 @@ export const FooterContainer = styled.footer`
 export const InnerFooterContainer = styled.div`
   margin: auto;
   @media screen and (min-width: 768px) {
-    /* width: 768px; */
   }
 `;
 export const TopFooterDiv = styled.div`
@@ -37,9 +34,6 @@ export const TopFooterDiv = styled.div`
   @media screen and (min-width: 1440px) {
     padding: 40px 128px 64px 128px;
     margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 1440px) {
   }
 `;
 export const Nav = styled.nav`
@@ -87,10 +81,10 @@ export const FooterText = styled.p`
   }
 `;
 export const MediaDiv = styled.div`
-  display: flex;
+  display: none;
   gap: 12px;
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 `;
 export const Media = styled.a`
@@ -112,10 +106,6 @@ export const Media = styled.a`
   .footerIcon {
     width: 28px;
     height: 28px;
-    /* @media screen and (min-width: 768px) {
-      width: 44px;
-      height: 44px;
-    } */
   }
 `;
 export const BottomFooterDiv = styled.div`
@@ -161,7 +151,6 @@ export const FooterNavP = styled.p`
 export const Div = styled.div`
   display: flex;
   gap: 270px;
-  /* margin-top: 40px; */
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;

@@ -8,19 +8,22 @@ export const LoaderContainer = styled.div`
 `;
 
 export const CartProductUl = styled.ul`
-  width: 460px;
+  max-width: 355px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   position: relative;
 
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 704px;
+  @media screen and (min-width: 375px) {
   }
-  @media screen and (max-width: 767px) {
-    width: 355px;
-    margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 460px;
   }
 `;
 export const CartProductLi = styled.li`
@@ -32,29 +35,36 @@ export const CartProductLi = styled.li`
   &:last-child {
     border-bottom: none;
   }
+  @media screen and (min-width: 768px) {
+  }
 `;
 export const CartProductImgDiv = styled.div`
   border: 1.15px solid #f1f1f1;
   border-radius: 27px;
-  width: 122px;
-  height: 133px;
+  min-width: 120px;
+  height: 120px;
   display: flex;
+  @media screen and (min-width: 768px) {
+    min-width: auto;
+    width: 122px;
+    height: 133px;
+  }
 `;
 
 export const CartProductInfDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 318px;
+  width: 203px;
   justify-content: space-between;
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
   color: #6a6a6f;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 549px;
+  @media screen and (min-width: 768px) {
+    width: 562px;
   }
-  @media screen and (max-width: 767px) {
-    width: 199px;
+  @media screen and (min-width: 768px) {
+    width: 318px;
   }
 `;
 
@@ -117,9 +127,13 @@ export const CartProductPlusMinusButton = styled.button`
 `;
 export const CartButtonsDiv = styled.div`
   display: flex;
+  gap: 19px;
   justify-content: space-between;
-  @media screen and (max-width: 767px) {
-    gap: 19px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 375px) {
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 768px) {
   }
 `;
 export const CartEmpty = styled.div`
@@ -139,15 +153,20 @@ export const DopDiv = styled.div`
 `;
 
 export const DopDivOrder = styled.div`
-  display: none;
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 140%;
-    color: #1d1e21;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1d1e21;
+  margin-bottom: 18px;
+  @media screen and (min-width: 375px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;
 export const DopDivHealth = styled.p`

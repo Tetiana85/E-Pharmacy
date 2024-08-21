@@ -1,43 +1,75 @@
 import styled from 'styled-components';
 export const CartContainer = styled.div`
-  width: 1224px;
-  padding: 20px;
-  margin: auto;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 704px;
+  padding: 39px 20px 0;
+  .cartName {
+    max-width: 335px;
+    margin: 0 auto;
+    font-size: 28px;
+    @media screen and (min-width: 768px) {
+      max-width: 704px;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 704px;
+      margin: 0 auto 0 0;
+    }
   }
-  @media screen and (max-width: 767px) {
-    width: 335px;
-    padding: 0;
+
+  @media screen and (min-width: 375px) {
+    padding: 39px 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 80px 32px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1184px;
+    margin: auto;
+    padding: 92px 0 120px;
   }
 `;
 export const CartMain = styled.div`
   display: flex;
-  gap: 96px;
-  margin-top: 32px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    flex-direction: column;
+  flex-direction: column;
+  max-width: 375px;
+  margin-top: 40px;
+
+  @media screen and (min-width: 375px) {
+    padding: 0;
+    align-items: center;
+    max-width: 100%;
   }
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 96px;
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: flex-start;
   }
 `;
 
 export const CartFormDiv = styled.div`
   border-radius: 27px;
-  width: 628px;
+  max-width: 335px;
+  padding: 20px 20px 40px;
   background: #fff;
-  padding: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   color: #6a6a6f;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 704px;
+  margin-bottom: 80px;
+  @media screen and (min-width: 375px) {
   }
-  @media screen and (max-width: 767px) {
-    width: 355px;
-    padding: 20px;
+  @media screen and (min-width: 768px) {
+    padding: 40px 92px 40px 78px;
+    max-width: 704px;
+    margin-bottom: 64px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 628px;
+    padding: 40px;
+    margin-bottom: 0;
   }
 `;
 export const CartFormHead = styled.p`
@@ -51,11 +83,10 @@ export const CartFormHead = styled.p`
 export const CartInput = styled.input`
   border: 1px solid rgba(29, 30, 33, 0.2);
   border-radius: 60px;
-  width: 260px;
+  width: 100%;
   height: 44px;
   padding: 18px;
   font-size: 12px;
-  display: flex;
   margin-top: 8px;
 
   &::placeholder {
@@ -70,8 +101,12 @@ export const CartInput = styled.input`
     outline: none;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 375px) {
     width: 295px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 260px;
+    display: flex;
   }
 `;
 export const CartLabel = styled.label`
@@ -85,16 +120,17 @@ export const CartLabel = styled.label`
 
 export const CartForm = styled.form`
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 40px;
-  @media screen and (max-width: 767px) {
-    justify-content: flex-start;
+  @media screen and (min-width: 768px) {
+    gap: 20px 14px;
   }
 `;
 export const CartPriceDiv = styled.div`
   border-radius: 8px;
-  width: 548px;
+  width: 100%;
   height: 65px;
   background: #e7f1ed;
   display: flex;
@@ -110,7 +146,7 @@ export const CartFormButton = styled.button`
   border-radius: 60px;
   border: none;
   padding: 13px 32px;
-  width: 141px;
+  max-width: 141px;
   height: 44px;
   background: ${(props) => (props.disabled ? 'rgb(136, 178, 152)' : '#59b17a')};
   font-weight: 500;
@@ -128,11 +164,12 @@ export const CartFormButton = styled.button`
   }
 `;
 export const CartForHr = styled.hr`
-  width: 530px;
+  max-width: 530px;
+  width: 100%;
   margin: 26px auto 40px auto;
   border: 0.5px solid rgba(29, 30, 33, 0.1);
-  @media screen and (max-width: 767px) {
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    margin: 24px auto 40px auto;
   }
 `;
 export const CartRadioDiv = styled.ul`

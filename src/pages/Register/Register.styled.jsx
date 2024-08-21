@@ -18,16 +18,15 @@ export const RegisterContainer = styled.div`
     max-width: 100%;
     padding: 168px 122px 0 32px;
     justify-content: center;
-    gap: 54px;
     align-items: flex-start;
   }
   @media screen and (min-width: 1440px) {
     flex-direction: row;
-    padding: 226px 122px 0 32px;
+    padding: 226px 0 0 100px;
+    justify-content: flex-start;
   }
 `;
 export const RegisterText = styled.div`
-  /* width: 540px; */
   position: relative;
   color: #1d1e21;
   margin-bottom: 20px;
@@ -36,6 +35,10 @@ export const RegisterText = styled.div`
   @media screen and (min-width: 768px) {
     line-height: 121%;
     width: 614px;
+    margin-bottom: 54px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0;
   }
   h3 {
     font-size: calc(26px + (28 - 26) * ((100vw - 320px) / (375 - 320)));
@@ -88,20 +91,34 @@ export const RegisterForm = styled(Form)`
   @media screen and (min-width: 768px) {
     max-width: 574px;
     align-items: flex-start;
+    gap: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 54px;
   }
 `;
+
 export const LoginForm = styled(Form)`
-  width: 323px;
+  max-width: 335px;
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   color: rgba(29, 30, 33, 0.4);
   display: flex;
   flex-direction: column;
-  gap: 62px;
-  @media screen and (max-width: 767px) {
-    bottom: -122px;
-    align-items: center;
+  align-items: center;
+
+  @media screen and (min-width: 375px) {
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 574px;
+    align-items: flex-start;
+    gap: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 323px;
+    margin-left: 150px;
   }
 `;
 export const RegisterFieldDiv = styled.div`
@@ -125,6 +142,16 @@ export const LogFieldDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: 100%;
+  margin-bottom: 128px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1440px) {
+    .loginInput {
+      width: 323px;
+    }
+  }
 `;
 export const RegisterField = styled(Field)`
   border: 1px solid rgba(29, 30, 33, 0.1);
@@ -133,8 +160,12 @@ export const RegisterField = styled(Field)`
   height: 44px;
   background: #fff;
   padding: 0 18px;
+
   @media screen and (min-width: 768px) {
     width: 280px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 100%;
   }
 `;
 
@@ -146,6 +177,14 @@ export const RegisterButtonDiv = styled.div`
   gap: 14px;
   @media screen and (min-width: 768px) {
     width: auto;
+  }
+  @media screen and (min-width: 1440px) {
+    .loginButton {
+      width: 323px;
+    }
+    .RegistrButton {
+      width: 280px;
+    }
   }
 `;
 export const RegisterButton = styled.button`
@@ -170,6 +209,9 @@ export const RegisterButton = styled.button`
   }
   @media screen and (min-width: 768px) {
     width: 280px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 100%;
   }
 `;
 

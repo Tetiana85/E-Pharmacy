@@ -9,26 +9,31 @@ export const CartReviewsLi = styled.li`
   border: 1px solid #f1f1f1;
   border-radius: 20px;
   padding: 14px 28px;
-  width: 720px;
+  width: 100%;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   color: #6a6a6f;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) {
     width: 640px;
   }
-  @media screen and (max-width: 767px) {
-    width: 295px;
+  @media screen and (min-width: 1440px) {
+    width: 720px;
+    font-size: 16px;
   }
 `;
 export const CartReviewsTopDiv = styled.div`
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
   color: #1d1e21;
   margin-bottom: 14px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 `;
 export const CartReviewsNameDiv = styled.div`
   display: flex;

@@ -156,7 +156,11 @@ const Register = () => {
                 </div>
               </RegisterFieldDiv>
               <RegisterButtonDiv>
-                <RegisterButton type="submit" disabled={isSubmitting}>
+                <RegisterButton
+                  type="submit"
+                  className="RegistrButton"
+                  disabled={isSubmitting}
+                >
                   Register
                 </RegisterButton>
                 <p onClick={toLogin} style={{ cursor: 'pointer' }}>
@@ -184,6 +188,7 @@ const Register = () => {
                     type="text"
                     name="email"
                     placeholder="Email address"
+                    className="loginInput"
                   />
                   <Error name="email" component="div" />
                 </div>
@@ -193,12 +198,17 @@ const Register = () => {
                     type="password"
                     name="password"
                     placeholder="Password"
+                    className="loginInput"
                   />
                   <Error name="password" component="div" />
                 </div>
               </LogFieldDiv>
               <RegisterButtonDiv>
-                <RegisterButton type="submit" disabled={isSubmitting}>
+                <RegisterButton
+                  type="submit"
+                  className="loginButton"
+                  disabled={isSubmitting}
+                >
                   Login
                 </RegisterButton>
                 <p onClick={toRegistration} style={{ cursor: 'pointer' }}>

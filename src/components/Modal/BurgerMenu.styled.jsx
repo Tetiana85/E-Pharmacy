@@ -36,9 +36,11 @@ export const NavDivBurger = styled.nav`
 export const RegDivBurger = styled.div`
   display: flex;
   gap: 4px;
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
   }
 `;
 export const LoginButtonBurger = styled.button`
@@ -50,13 +52,29 @@ export const LoginButtonBurger = styled.button`
   font-size: 14px;
   line-height: 100%;
   color: #fff;
-  text-decoration: underline;
   cursor: pointer;
+  position: relative;
   transition: box-shadow 0.3s ease;
   &:hover,
   &:focus,
   &:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 13px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 16px;
+    &:after {
+      left: 16px;
+      right: 15px;
+    }
   }
 `;
 

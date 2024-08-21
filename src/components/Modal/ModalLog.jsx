@@ -113,7 +113,11 @@ const ModalLog = ({ close, openReg }) => {
             </ModalLogForm>
           )}
         </Formik>
-        <p onClick={toOpenRegisterModal} style={{ cursor: 'pointer' }}>
+        <p
+          className="textLink"
+          onClick={toOpenRegisterModal}
+          style={{ cursor: 'pointer' }}
+        >
           Don&apos;t have an account?
         </p>
       </ModallogContainer>

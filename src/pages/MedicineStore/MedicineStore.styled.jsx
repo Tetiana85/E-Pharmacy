@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 export const MedicineStoreContainer = styled.div`
-  /* width: 1223px; */
   padding: 72px 20px;
   margin: auto;
   box-sizing: border-box;
@@ -36,7 +35,6 @@ export const MedicineStoreContainer = styled.div`
   }
   @media screen and (min-width: 1440px) {
     max-width: 1184px;
-    /* margin-bottom: 80px; */
     padding: 0;
     h3 {
       margin-top: 72px;

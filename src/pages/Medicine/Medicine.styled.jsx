@@ -5,7 +5,6 @@ export const MedicineContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  /* width: 1223px; */
   padding: 72px 20px 120px 20px;
   margin: auto;
   box-sizing: border-box;
@@ -216,7 +215,6 @@ export const FilterForm = styled(Form)`
   flex-direction: column;
   gap: 12px;
   max-width: 335px;
-  /* padding: 0 10px; */
 
   @media screen and (min-width: 768px) {
     gap: 14px;
@@ -224,7 +222,6 @@ export const FilterForm = styled(Form)`
     flex-direction: row;
     width: 100%;
     max-width: 576px;
-    /* justify-content: space-between; */
   }
 `;
 

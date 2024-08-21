@@ -24,10 +24,8 @@ export const HomeMain = styled.div`
   }
 `;
 export const HomeMainText = styled.p`
-  /* width: 609px; */
   font-weight: 600;
   font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (375 - 320)));
-  /* font-size: 74px; */
   width: 100%;
   max-width: 331px;
   line-height: 100%;
@@ -51,7 +49,6 @@ export const HomeMainImg = styled.img`
   width: 134%;
 
   @media screen and (min-width: 768px) {
-    /* max-width: 704px; */
     bottom: -160px;
     right: -96px;
     width: 125%;
@@ -63,7 +60,6 @@ export const HomeText = styled.p`
   font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (375 - 320)));
   line-height: 125%;
   color: #fff;
-  /* width: 207px; */
   position: relative;
   left: calc(167px + (177 - 167) * ((100vw - 320px) / (375 - 320)));
   width: calc(116px + (156 - 116) * ((100vw - 320px) / (375 - 320)));

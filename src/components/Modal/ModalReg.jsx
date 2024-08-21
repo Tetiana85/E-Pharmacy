@@ -5,7 +5,6 @@ import {
   ModalLogButton,
   ModalLogCloseSvg,
   ModalLogForm,
-  ModalLogSpan,
 } from './ModalLog.styled';
 import {
   ModalRegContainer,
@@ -88,7 +87,9 @@ const ModalReg = ({ close, openLog }) => {
           <use href={`${sprite}#xB`}></use>
         </ModalLogCloseSvg>
         <ModalRegH3>Sign Up</ModalRegH3>
-        <p>Before proceeding, please register on our site.</p>
+        <p className="textInfo">
+          Before proceeding, please register on our site.
+        </p>
         <Formik
           initialValues={{ name: '', email: '', phone: '', password: '' }}
           validationSchema={validationSchema}
@@ -146,7 +147,11 @@ const ModalReg = ({ close, openLog }) => {
             </ModalLogForm>
           )}
         </Formik>
-        <p onClick={toOpenLoginModal} style={{ cursor: 'pointer' }}>
+        <p
+          className="textLink"
+          onClick={toOpenLoginModal}
+          style={{ cursor: 'pointer' }}
+        >
           Already have an account?
         </p>
       </ModalRegContainer>
