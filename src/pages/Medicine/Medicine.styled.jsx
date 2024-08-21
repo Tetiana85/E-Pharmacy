@@ -71,9 +71,6 @@ export const MedicineLi = styled.li`
     width: 280px;
     height: 423px;
   }
-  @media screen and (max-width: 767px) {
-    /* */
-  }
 `;
 
 export const MedicineImgDiv = styled.div`
