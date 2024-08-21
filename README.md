@@ -2,9 +2,9 @@
 
 E-Pharmacy is a web application designed for purchasing medicines online, with a
 strong emphasis on mobile-first design. The site is fully responsive, featuring
-adaptive layouts at breakpoints of 320px, 375px, 768px, and 1440px. The
-application includes modal windows for user authentication, such as signing in
-and signing up.
+adaptive layouts at breakpoints of 375px, 768px, and 1440px. The application
+includes modal windows for user authentication, such as signing in and signing
+up.
 
 The application is powered by its own backend API, which can be found here:
 [E-Pharmacy Backend API](https://github.com/Tetiana85/E-Pharmacy-back)
