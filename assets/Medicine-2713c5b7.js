@@ -1,4 +1,4 @@
-import{s as H,r as p,m as qn,i as Yn,R as Dt,k as Kn,j as S,b as pe,a as Xn,c as Zn,u as Jn,f as At,n as Qn,S as er,o as Mt,p as Xe,q as tr}from"./index-08e53d42.js";import{F as nr,a as rr,c as ir,b as It,Q as ar,d as or}from"./ReactToastify-f9b518b3.js";import{u as Ze}from"./index-d8eab026.js";import{M as ur,a as sr}from"./ModalReg-0ada8e11.js";import{S as lr}from"./MedicineStore.styled-384eb00b.js";const cr=H.div`
+import{s as H,r as p,m as qn,i as Yn,R as Dt,k as Kn,j as S,b as pe,a as Xn,c as Zn,u as Jn,f as At,n as Qn,S as er,o as Mt,p as Xe,q as tr}from"./index-ce6fc3b8.js";import{F as nr,a as rr,c as ir,b as It,Q as ar,d as or}from"./ReactToastify-816971a4.js";import{u as Ze}from"./index-370078ba.js";import{M as ur,a as sr}from"./ModalReg-bd467843.js";import{S as lr}from"./MedicineStore.styled-e0a49439.js";const cr=H.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -61,9 +61,6 @@ import{s as H,r as p,m as qn,i as Yn,R as Dt,k as Kn,j as S,b as pe,a as Xn,c as
   @media screen and (min-width: 1440px) {
     width: 280px;
     height: 423px;
-  }
-  @media screen and (max-width: 767px) {
-    /* */
   }
 `,hr=H.div`
   border: 1.15px solid rgba(89, 177, 122, 0.6);

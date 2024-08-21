@@ -1,4 +1,4 @@
-import{s as i}from"./index-08e53d42.js";const t=i.div`
+import{s as i}from"./index-ce6fc3b8.js";const t=i.div`
   padding: 72px 20px;
   margin: auto;
   box-sizing: border-box;
